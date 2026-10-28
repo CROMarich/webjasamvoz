@@ -1,0 +1,15 @@
+node_modules/
+_site/
+
+# Generirano s node build.js (GitHub Actions ih gradi sam)
+/*.html
+blog/
+kategorija/
+autor/
+images/ilustracije/
+images/og/
+js/search-index.js
+sitemap.xml
+robots.txt
+CNAME
+ads.txt

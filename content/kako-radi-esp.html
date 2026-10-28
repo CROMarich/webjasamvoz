@@ -1,0 +1,44 @@
+<!--
+publish: 2027-01-22
+title: Kako radi ESP sustav?
+description: ESP kočenjem pojedinih kotača ispravlja podupravljanje i preupravljanje. Što mjeri, kada reagira, zašto treperi lampica i kada ga ima smisla isključiti.
+category: Vožnja
+emoji: 🌀
+readtime: 6
+-->
+<p class="lead">Zavoj na staroj cesti uz more, asfalt uglačan od godina prometa i malo ulja od kiše nakon dugog sušnog razdoblja. Stražnji kraj auta krene van, a vi osjetite kratko, gotovo nečujno kočenje i treptaj žute lampice na ploči. Auto se vrati na svoju putanju prije nego što ste uopće shvatili da je klizio. To je posao ESP-a, elektroničkog programa stabilnosti, koji mnogi stručnjaci smatraju jednim od najvažnijih sigurnosnih sustava nakon pojasa.</p>
+
+<h2 id="sto-je">Što ESP zapravo radi</h2>
+<p>ESP, ovisno o proizvođaču nazvan i ESC, DSC ili VSC, stalno uspoređuje smjer u kojem vozač želi ići s onim u kojem auto stvarno ide. Kad se ta dva razilaze, sustav koči pojedine kotače i po potrebi smanjuje snagu motora kako bi vratio auto na željenu putanju. Za razliku od ABS-a, koji radi samo pri kočenju, ESP može intervenirati i kad uopće ne dodirujete papučicu kočnice.</p>
+
+<h2 id="senzori">Što mjeri</h2>
+<p>Sustav koristi senzore brzine kotača od ABS-a, senzor kuta zakreta volana, senzor zakretanja vozila oko okomite osi i senzor bočnog ubrzanja. Iz kuta volana i brzine izračunava kako bi se auto trebao okretati, a iz senzora zakretanja zna kako se stvarno okreće. Hidraulička jedinica ABS-a omogućuje mu da tlak u svakom kliještu podiže neovisno o papučici. Osnove te jedinice opisujemo u članku <a href="kako-radi-abs.html">kako radi ABS sustav</a>.</p>
+
+<h2 id="intervencije">Podupravljanje i preupravljanje</h2>
+<p>Kod podupravljanja prednji kotači gube prianjanje i auto ide šire od zavoja nego što volan pokazuje. ESP tada najčešće koči unutarnji stražnji kotač, što auto zakreće prema unutrašnjosti zavoja, i smanjuje snagu.</p>
+<p>Kod preupravljanja stražnji kraj izlazi van i auto se okreće oko sebe. ESP tada koči vanjski prednji kotač i tako stvara moment koji ispravlja rotaciju. Sve to traje djeliće sekunde i vozač obično osjeti tek lagan trzaj i čuje zujanje pumpe.</p>
+
+<h2 id="tablica">ESP u situacijama na cesti</h2>
+<div class="table-wrap"><table>
+<tr><th>Situacija</th><th>Što ESP radi</th></tr>
+<tr><td>Prebrz ulazak u zavoj</td><td>Koči unutarnji stražnji kotač, smanjuje snagu</td></tr>
+<tr><td>Zanošenje stražnjeg kraja</td><td>Koči vanjski prednji kotač</td></tr>
+<tr><td>Nagla promjena trake pri izbjegavanju</td><td>Smiruje njihanje auta naprijed natrag</td></tr>
+<tr><td>Ubrzanje na skliskom</td><td>Kontrola proklizavanja smanjuje snagu</td></tr>
+<tr><td>Prikolica koja se njiše</td><td>Kod mnogih auta posebna funkcija stabilizacije</td></tr>
+</table></div>
+
+<h2 id="granice">Granice sustava</h2>
+<p>ESP ne može stvoriti prianjanje koje ne postoji. Ako je zavoj prebrz za istrošene ljetne gume na mokrom, sustav može samo ublažiti posljedice. Isto vrijedi za neispravne amortizere ili gume različitog profila na istoj osovini, jer tada izračuni sustava više ne odgovaraju stvarnom ponašanju auta. Kad vam kotači proklizavaju pri kretanju, prvo se uključuje kontrola proklizavanja, o čemu pišemo u tekstu <a href="proklizavanje-kotaca.html">što znači proklizavanje kotača</a>.</p>
+<div class="tip"><strong>Savjet:</strong> Ako lampica ESP-a često treperi u normalnoj vožnji, to nije znak da je sustav pretjerano oprezan, nego da vozite na granici prianjanja. Usporite ili provjerite gume.</div>
+
+<h2 id="iskljucivanje">Kada ga isključiti</h2>
+<p>Gotovo nikad. Iznimka je pokretanje iz dubokog snijega ili blata, kad kontrola proklizavanja oduzima snagu i ne da kotačima da se zavrte i očiste. Tada pritisnite tipku, izvucite auto i odmah ponovno uključite sustav. Kod većine auta ESP se pri sljedećem paljenju sam uključuje. Ako lampica ESP-a stalno svijetli, sustav je isključen zbog greške, najčešće senzora kotača ili kuta volana.</p>
+
+<h2 id="faq">Česta pitanja</h2>
+<div class="faq">
+<details><summary>Treba li nakon optike kotača kalibrirati ESP?</summary><p>Kod mnogih auta da, senzor kuta volana treba postaviti na nulu. Dobar servis to radi uz geometriju.</p></details>
+<details><summary>Imaju li svi automobili ESP?</summary><p>Novi automobili u EU-u ga moraju imati već godinama, ali stariji rabljeni modeli, osobito iz osnovnih izvedbi, ponekad ga nemaju. Provjerite to pri kupnji.</p></details>
+<details><summary>Pomaže li ESP na snijegu i ledu?</summary><p>Pomaže održati smjer, ali ne skraćuje put kočenja. Pogledajte <a href="kocenje-na-snijegu-i-ledu.html">kako kočiti na snijegu i ledu</a>.</p></details>
+</div>
+<p><small>Izvori: opći principi elektroničke kontrole stabilnosti, dokumentacija proizvođača sustava.</small></p>

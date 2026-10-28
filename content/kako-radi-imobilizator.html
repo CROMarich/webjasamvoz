@@ -1,0 +1,45 @@
+<!--
+publish: 2027-02-08
+title: Kako radi imobilizator?
+description: Što je imobilizator, kako čip u ključu razgovara s autom, zašto ga je teško zaobići, koje su njegove slabosti i zašto je važno imati dva ispravna ključa.
+category: Održavanje
+emoji: 🛡️
+readtime: 6
+-->
+<p class="lead">Prije tridesetak godina auto se mogao upaliti spajanjem dviju žica ispod volana. Danas to više ne prolazi, a zasluga ide imobilizatoru: maloj elektroničkoj zaštiti koja ne dopušta rad motora bez ispravnog ključa. U Europskoj uniji imobilizator je obavezan na novim autima od kraja devedesetih, pa ga ima gotovo svaki auto na našim cestama.</p>
+
+<h2 id="princip">Osnovni princip</h2>
+<p>U ključu se nalazi transponder, sićušan čip s antenom, najčešće bez vlastite baterije. Oko brave kontakta ili ispod tipke za paljenje nalazi se prstenasta antena. Kad okrenete ključ ili pritisnete tipku, antena stvara slabo elektromagnetsko polje koje napaja čip, a on odgovori svojim kodom. Jedinica imobilizatora provjeri kod i, ako je ispravan, dopusti upravljačkoj jedinici motora da ubrizgava gorivo i pali.</p>
+<p>Zato auto s ispražnjenom baterijom ključa obično ipak upali: daljinsko otključavanje ne radi, ali čip i dalje odgovara kad je ključ dovoljno blizu antene.</p>
+
+<h2 id="razvoj">Od fiksnog koda do kriptografije</h2>
+<div class="table-wrap"><table>
+<tr><th>Generacija</th><th>Kako radi</th><th>Otpornost</th></tr>
+<tr><td>Fiksni kod</td><td>Čip uvijek šalje isti kod</td><td>Slaba, kod se može kopirati</td></tr>
+<tr><td>Promjenjivi kod</td><td>Kod se mijenja pri svakom paljenju</td><td>Bolja</td></tr>
+<tr><td>Izazov i odgovor</td><td>Auto šalje slučajan broj, čip ga kriptira tajnim ključem</td><td>Dobra, ovisi o kvaliteti algoritma</td></tr>
+<tr><td>Integrirani sustavi</td><td>Imobilizator je dio više jedinica koje se međusobno provjeravaju</td><td>Najbolja, ali skuplja kod popravaka</td></tr>
+</table></div>
+<p>Kod novijih auta motor, mjenjač, ploča s instrumentima i jedinica karoserije međusobno se prepoznaju. Ugradnja rabljene upravljačke jedinice s drugog auta zato često ne radi bez kodiranja.</p>
+
+<h2 id="slabosti">Može li se zaobići</h2>
+<p>Lopovi uglavnom ne napadaju imobilizator izravno. Kod sustava bez ključa koriste napad pojačavanjem signala: jedan uređaj hvata signal ključa iz kuće, drugi ga prenosi do auta i auto misli da je ključ uz njega. Drugi način je programiranje novog ključa preko dijagnostičke utičnice. Zato imobilizator nije potpuna zaštita, pa vrijedi pogledati i članak <a href="kako-zastititi-automobil-od-krade.html">kako zaštititi automobil od krađe</a> te popis <a href="vozila-koja-se-najvise-kradu-u-hrvatskoj.html">vozila koja se najviše kradu u Hrvatskoj</a>.</p>
+
+<div class="tip"><strong>Savjet:</strong> Ključ bez ključa držite kod kuće dalje od ulaznih vrata ili u kutiji koja blokira signal. Mnogi noviji ključevi imaju i način mirovanja koji se uključi kombinacijom tipki, pa provjerite knjižicu.</div>
+
+<h2 id="kvarovi">Kad imobilizator stvara probleme</h2>
+<p>Znakovi kvara su lampica s ključem ili autom koja treperi nakon uključivanja kontakta, motor koji upali i odmah se ugasi ili anlaser koji se ne pokreće. Uzrok je najčešće oštećen ključ, smetnja od drugog čipa na privjesku, kvar antene ili slab akumulator. Kako to suziti korak po korak, opisujemo u članku <a href="automobil-ne-prepoznaje-kljuc.html">zašto automobil ne prepoznaje ključ</a>.</p>
+
+<h2 id="dva-kljuca">Zašto trebaju dva ključa</h2>
+<p>Novi ključ mora se upisati u memoriju auta. Kod nekih marki upisivanje je jednostavno dok imate barem jedan ispravan ključ, a kad su svi izgubljeni, postupak je znatno skuplji i ponekad zahtijeva zamjenu jedinice. Kod kupnje rabljenog auta zato tražite oba ključa, što preporučujemo i u <a href="kontrolna-lista-prije-kupnje-rabljenog-automobila.html">kontrolnoj listi prije kupnje rabljenog automobila</a>. Ako se ključ ipak izgubi, pogledajte <a href="izgubljen-kljuc-automobila.html">što učiniti kada izgubite ključ automobila</a>.</p>
+
+<h2 id="rabljeni">Na što pripaziti kod rabljenog auta</h2>
+<p>Pri kupnji provjerite da oba ključa pale motor, a ne samo da otključavaju vrata. Lampica imobilizatora treba se ugasiti nekoliko sekundi nakon uključivanja kontakta. Ako svijetli ili treperi, ili prodavatelj objašnjava da auto "pali samo s ovim ključem", računajte na trošak novog ključa ili popravka. Sumnjivo je i ako je imobilizator isključen ili premošten, što se ponekad radi nakon kvara jedinice: takav auto lako je ukrasti, a osiguravatelj bi kod krađe mogao postavljati pitanja. Ozbiljniji servis može dijagnostikom pokazati koliko je ključeva upisano u auto, što je korisno znati.</p>
+
+<h2 id="faq">Česta pitanja</h2>
+<div class="faq">
+<details><summary>Je li imobilizator isto što i alarm?</summary><p>Nije. Alarm upozorava na provalu zvukom i svjetlom, a imobilizator tiho sprječava paljenje motora. Mnogi auti imaju imobilizator, ali ne i alarm.</p></details>
+<details><summary>Može li se imobilizator isključiti?</summary><p>Tehnički je moguće, ali se ne preporučuje: auto postaje lak plijen, a osiguranje bi moglo odbiti isplatu kod krađe.</p></details>
+<details><summary>Ima li imobilizator bateriju?</summary><p>Čip u ključu obično nema. Sustav u autu napaja se iz akumulatora.</p></details>
+</div>
+<p><small>Izvori: opći tehnički principi imobilizatora i transpondera, propisi EU o zaštiti vozila od neovlaštene uporabe.</small></p>

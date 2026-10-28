@@ -1,0 +1,41 @@
+<!--
+publish: 2027-01-18
+title: Može li jeftini OBD uređaj otkriti kvar?
+description: Bluetooth OBD čitač od 15 eura može očitati grešku motora, ali ima granice. Što jeftini uređaj stvarno može, a gdje vam treba prava dijagnostika.
+category: Oprema
+emoji: 📱
+readtime: 6
+-->
+<p class="lead">Mali plavi ELM327 čitač s Bluetoothom košta manje od pune rezervoara benzina, a obećava da ćete sami saznati zašto svijetli lampica motora. Djelomično je to istina. Za jednostavna pitanja jeftini uređaj je odličan, ali vrlo brzo dođe do granice, i tada je opasnije vjerovati mu nego ne imati ga.</p>
+
+<h2 id="vrste">Što se prodaje</h2>
+<div class="table-wrap"><table>
+<tr><th>Vrsta</th><th>Okvirna cijena</th><th>Što može</th></tr>
+<tr><td>Bluetooth ili Wi-Fi adapter (ELM327 klon)</td><td>10 do 30 €</td><td>Generički OBD2: greške motora, živi podaci uz aplikaciju</td></tr>
+<tr><td>Kvalitetniji adapter s aplikacijom za marku</td><td>40 do 120 €</td><td>Dio jedinica proizvođača, ponekad ABS, SRS, servisni reset</td></tr>
+<tr><td>Ručni skener sa zaslonom</td><td>30 do 150 €</td><td>Generički OBD2, kod boljih i dodatni sustavi</td></tr>
+<tr><td>Profesionalni alat</td><td>nekoliko stotina € i više</td><td>Gotovo sve jedinice, kodiranje, testovi aktuatora</td></tr>
+</table></div>
+<p>Pregled konkretnih uređaja imamo u članku <a href="najbolji-obd2-skeneri.html">najbolji OBD2 skeneri</a>.</p>
+
+<h2 id="moze">Što jeftini uređaj može</h2>
+<p>Jeftini adapter pouzdano očitava standardne kodove motora i emisija, prikazuje freeze frame i žive podatke poput temperature rashladne tekućine, okretaja, napona, kratkoročnih i dugoročnih korekcija goriva te rada lambda sonde. To je dovoljno da saznate je li <a href="lampica-motora-check-engine.html">lampica motora</a> upaljena zbog labavog čepa goriva ili preskakanja paljenja, i da u servis dođete informirani. Korisno je i za brzu provjeru rabljenog auta: ako su greške nedavno obrisane, monitori spremnosti pokazat će da nisu dovršeni.</p>
+
+<h2 id="ne-moze">Gdje stane</h2>
+<p>Najjeftiniji adapteri uglavnom ne vide jedinice ABS-a, zračnih jastuka, mjenjača, karoserije i klime. Ne mogu pokrenuti regeneraciju DPF-a, prilagoditi novi akumulator ni resetirati servis kod većine auta. Klonovi ELM327 čipa znaju biti nestabilni, gube vezu ili krivo prikazuju podatke na nekim protokolima. Osim toga, uređaj vam daje kod, a ne dijagnozu, o čemu više u članku <a href="kako-radi-obd-dijagnostika.html">kako radi OBD dijagnostika</a>.</p>
+
+<h2 id="zamke">Najčešće zamke</h2>
+<p><strong>Mijenjanje dijelova prema kodu.</strong> Kod lambda sonde često ne znači da je sonda kriva, nego da ona javlja problem sa smjesom.</p>
+<p><strong>Brisanje grešaka bez popravka.</strong> Lampica se ugasi, ali kvar ostaje i vraća se, a vi ste izbrisali freeze frame koji bi mehaničaru pomogao. Pogledajte <a href="greska-se-vraca-nakon-brisanja.html">zašto se greška vraća nakon brisanja</a>.</p>
+<p><strong>Adapter stalno utaknut.</strong> Neki jeftini adapteri troše struju i kad je auto ugašen. Ako auto stoji danima, mogu isprazniti akumulator, što je čest nalaz kod traženja <a href="kako-pronaci-potrosaca-koji-prazni-akumulator.html">potrošača koji prazni akumulator</a>.</p>
+<p><strong>Kodiranje bez znanja.</strong> Aplikacije koje omogućuju mijenjanje postavki jedinica mogu napraviti štetu ako ne znate što radite.</p>
+
+<div class="tip"><strong>Savjet:</strong> Prije kupnje provjerite podržava li aplikacija vašu marku i koje jedinice. Uređaj od 20 € s besplatnom aplikacijom dovoljan je za motor, a za ABS i zračne jastuke tražite izričito navedenu podršku za vaš model.</div>
+
+<h2 id="faq">Česta pitanja</h2>
+<div class="faq">
+<details><summary>Može li jeftini čitač oštetiti auto?</summary><p>Samo čitanje grešaka je sigurno. Rizik postoji kod kodiranja i mijenjanja postavki te kod lošeg adaptera koji prazni akumulator.</p></details>
+<details><summary>Radi li ELM327 na svim autima?</summary><p>Na većini benzinaca od 2001. i dizela od 2004. u EU, ali ne na svakom protokolu jednako dobro.</p></details>
+<details><summary>Isplati li se kupiti čitač ako imam stariji auto?</summary><p>Da, ako želite znati što se događa prije odlaska u servis. Za 20 do 30 € to je jedan od najkorisnijih alata u prtljažniku.</p></details>
+</div>
+<p><small>Izvori: standard OBD2 (SAE J1979), dokumentacija ELM327 čipa, opća praksa dijagnostike vozila.</small></p>

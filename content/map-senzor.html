@@ -1,0 +1,79 @@
+<!--
+publish: 2026-10-30
+title: MAP senzor – čemu služi, simptomi kvara i kako ga provjeriti
+description: Što je MAP senzor tlaka u usisnoj grani, kako utječe na rad motora, koji su znakovi kvara te kako se senzor čisti, provjerava i mijenja.
+category: Održavanje
+emoji: 🔌
+readtime: 6
+-->
+<p class="lead">MAP senzor (Manifold Absolute Pressure) mjeri apsolutni tlak u usisnoj grani motora. Na temelju tog podatka računalo motora procjenjuje koliko zraka ulazi u cilindre i koliko goriva treba ubrizgati. Kod motora s turbopunjačem MAP senzor prati i tlak prednabijanja. Senzor je malen i jeftin, no kad zakaže, motor može ozbiljno zapinjati.</p>
+
+<h2 id="kako-radi">Kako radi MAP senzor</h2>
+<p>Senzor sadrži membranu i piezootporni element koji tlak pretvara u električni napon. Kad je leptir gotovo zatvoren (prazan hod), u usisnoj grani je podtlak i napon je nizak. Kad dodate gas ili turbo počne puniti, tlak raste, a s njim i napon. Računalo motora taj signal kombinira s temperaturom usisnog zraka, brojem okretaja i drugim senzorima.</p>
+<p>Neka vozila imaju samo MAP senzor, a neka uz njega i <strong>mjerač protoka zraka</strong> (MAF). Često je u MAP senzor ugrađen i senzor temperature zraka (tzv. T-MAP).</p>
+
+<h2 id="simptomi">Simptomi neispravnog MAP senzora</h2>
+<ul>
+<li>uključena lampica motora i kodovi grešaka u rasponu P0105–P0109 ili greške tlaka prednabijanja (npr. P0235–P0238, P0299),</li>
+<li>pad snage i ulazak u sigurnosni način rada,</li>
+<li>trzanje i neujednačeno ubrzavanje,</li>
+<li>nestabilan prazan hod ili gašenje motora,</li>
+<li>povećana potrošnja goriva,</li>
+<li>crni dim kod dizela zbog prebogate smjese,</li>
+<li>otežano paljenje.</li>
+</ul>
+<div class="tip"><strong>Savjet:</strong> Kod turbo motora gubitak snage nije uvijek kvar senzora. Puknuto crijevo interkulera ili propuštanje usisa daje slične kodove. Prije kupnje novog senzora neka serviser provjeri cijeli usisni sustav.</div>
+
+<h2 id="uzroci">Najčešći uzroci kvara</h2>
+<div class="table-wrap"><table>
+<tr><th>Uzrok</th><th>Objašnjenje</th></tr>
+<tr><td>Zaprljanost</td><td>Uljne pare i čađa (osobito uz EGR) talože se na otvoru senzora.</td></tr>
+<tr><td>Oštećen konektor ili kabel</td><td>Korozija, labav spoj ili prekid vodiča.</td></tr>
+<tr><td>Puknuto vakuumsko crijevo</td><td>Kod senzora spojenih crijevom na usisnu granu.</td></tr>
+<tr><td>Kvar elektronike senzora</td><td>Starenje, toplina i vibracije.</td></tr>
+</table></div>
+
+<h2 id="provjera">Kako provjeriti MAP senzor</h2>
+<ol>
+<li><strong>Očitajte greške</strong> OBD dijagnostičkim uređajem. Jeftini OBD čitači mogu pokazati i podatke uživo.</li>
+<li><strong>Usporedite vrijednosti</strong>: s ugašenim motorom i uključenim kontaktom senzor bi trebao pokazivati približno atmosferski tlak (oko 1 bar, odnosno oko 100 kPa, ovisno o nadmorskoj visini). U praznom hodu benzinca tlak pada znatno ispod atmosferskog.</li>
+<li>Vizualno provjerite konektor i crijevo.</li>
+<li>Izmjerite napon multimetrom prema shemi proizvođača (napajanje je obično 5 V).</li>
+</ol>
+
+<h2 id="ciscenje-zamjena">Čišćenje i zamjena</h2>
+<p>MAP senzor obično je pričvršćen jednim ili dva vijka na usisnu granu ili cijev nakon interkulera, pa se lako skida. Ako je zaprljan, može se očistiti specijalnim sprejem za senzore (ne koristite agresivna otapala ni grube alate jer ćete oštetiti membranu). Ako čišćenje ne pomogne, senzor se mijenja. Riječ je o jednom od jeftinijih dijelova motora, ali cijena ovisi o vozilu i proizvođaču dijela. Birajte provjerene marke ili originalni dio jer jeftine kopije često daju netočna očitanja.</p>
+<p>Nakon zamjene obrišite memoriju grešaka i provjerite rad motora probnom vožnjom. Tijekom vožnje, ako imate OBD čitač s podacima uživo, pratite tlak u usisnoj grani: trebao bi glatko rasti kad dodate gas i padati kad ga otpustite, bez naglih skokova ili zastoja. Kod turbo motora usporedite zadani i stvarni tlak prednabijanja pri jačem ubrzanju. Ako se greška vrati nakon nekoliko dana, uzrok vjerojatno nije bio u senzoru, nego u ožičenju ili usisu.</p>
+
+<h2 id="posljedice">Što ako se kvar ignorira</h2>
+<p>Pogrešan signal tlaka znači pogrešnu količinu goriva. Prebogata smjesa stvara više čađe, što opterećuje <a href="dpf-filter.html">DPF filter</a> i <a href="egr-ventil.html">EGR ventil</a>, a kod benzinaca može oštetiti <a href="katalizator.html">katalizator</a>. Siromašna smjesa može dovesti do pregrijavanja i lupanja motora. Mali i jeftin popravak tako sprječava mnogo skuplje kvarove.</p>
+
+<h2 id="pogreske">Česte pogreške pri dijagnostici</h2>
+<ul>
+<li>Senzor se mijenja čim se pojavi kôd s njegovim imenom. Kôd često znači samo da je signal izvan očekivanog raspona, a uzrok može biti propuštanje usisa, prekinut vodič ili problem s turbopunjačem.</li>
+<li>Senzor se čisti sredstvom za karburator ili kočnice. Takva otapala mogu oštetiti membranu i brtve, pa koristite samo sprej namijenjen senzorima.</li>
+<li>Konektor se ne provjeri. Zelenkasta korozija na kontaktima ili savijeni pin daju jednake simptome kao neispravan senzor.</li>
+<li>Kupi se najjeftinija kopija bez provjere oznake dijela. Senzori izgledaju slično, ali se razlikuju po mjernom rasponu, pa krivi model daje krive vrijednosti.</li>
+</ul>
+
+<h2 id="primjer">Primjer iz prakse</h2>
+<p>Dizelski kombi s turbopunjačem povremeno je ulazio u sigurnosni način rada pri ubrzavanju na autocesti, uz kôd P0299 (premalen tlak prednabijanja). Vlasnik je najprije kupio novi MAP senzor, ali problem je ostao. U servisu su na podacima uživo usporedili zadani i stvarni tlak prednabijanja: pri jačem gasu stvarni je tlak zaostajao. Pregledom je pronađeno napuknuto crijevo interkulera koje se širilo tek pod tlakom.</p>
+<p>Nakon zamjene crijeva greška se više nije pojavila. Stari senzor bio je ispravan, samo zaprljan uljnim parama. Pouka je jednostavna: kod turbo motora prije zamjene senzora treba provjeriti nepropusnost cijelog usisa.</p>
+
+<h2 id="kontrolna-lista">Kratka kontrolna lista</h2>
+<ol>
+<li>Očitajte i zapišite kodove prije brisanja.</li>
+<li>Provjerite očitanje tlaka s ugašenim motorom i uključenim kontaktom.</li>
+<li>Pregledajte konektor, vodiče i vakuumsko crijevo.</li>
+<li>Kod turbo motora pregledajte crijeva i spojeve interkulera.</li>
+<li>Tek nakon toga očistite ili zamijenite senzor.</li>
+</ol>
+
+<h2 id="faq">Česta pitanja</h2>
+<div class="faq">
+<details><summary>Mogu li voziti s pokvarenim MAP senzorom?</summary><p>Motor će najčešće raditi u sigurnosnom načinu, ali uz manju snagu i veću potrošnju. Vožnja do servisa je u pravilu moguća, no dugotrajna vožnja nije preporučljiva.</p></details>
+<details><summary>Koja je razlika između MAP i MAF senzora?</summary><p>MAP mjeri tlak u usisnoj grani, a MAF izravno mjeri masu zraka koji prolazi u motor. Mnoga vozila imaju oba.</p></details>
+<details><summary>Treba li MAP senzor programirati nakon zamjene?</summary><p>U pravilu ne, dovoljno je obrisati greške. Kod nekih vozila preporučuje se prilagodba prema uputama proizvođača.</p></details>
+<details><summary>Koliko često se MAP senzor kvari?</summary><p>Rijetko u usporedbi s drugim dijelovima, ali kod dizela s EGR-om češće dolazi do zaprljanja.</p></details>
+</div>
+<p><small>Izvori: standardni OBD-II kodovi grešaka (SAE J2012); tehnička dokumentacija proizvođača senzora.</small></p>

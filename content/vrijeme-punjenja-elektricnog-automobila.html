@@ -1,0 +1,80 @@
+<!--
+publish: 2026-11-18
+title: Koliko traje punjenje električnog automobila
+description: Kako izračunati vrijeme punjenja električnog automobila, koliko traje punjenje na utičnici, wallboxu i brzom punjaču te što utječe na brzinu.
+category: Električna vozila
+emoji: ⏱️
+readtime: 7
+-->
+<p class="lead">Koliko traje punjenje električnog automobila? Odgovor može biti 20 minuta ili 20 sati, ovisno o punjaču, automobilu, veličini baterije i temperaturi. Kad jednom shvatite osnovno pravilo, vrijeme punjenja možete sami izračunati za bilo koji auto.</p>
+
+<h2 id="formula">Osnovna formula</h2>
+<p><strong>Vrijeme (h) = energija koju treba dopuniti (kWh) ÷ stvarna snaga punjenja (kW)</strong></p>
+<p>Primjer: baterija od 60 kWh, punite od 20 % do 80 %, dakle 36 kWh. Na wallboxu od 11 kW to traje oko 36 ÷ 11 ≈ 3,3 sata, plus 10-ak posto zbog gubitaka, dakle realno oko 3,5–4 sata.</p>
+<p>Stvarna snaga uvijek je <strong>najmanja</strong> od tri vrijednosti: snage punjača, snage koju auto prima (AC ugrađeni punjač ili DC maksimum) i snage koju baterija u tom trenutku može prihvatiti.</p>
+
+<h2 id="tablica">Okvirna vremena punjenja</h2>
+<p>Za bateriju od 60 kWh neto, od 10 % do 80 % (42 kWh):</p>
+<div class="table-wrap"><table>
+<tr><th>Način punjenja</th><th>Snaga</th><th>Okvirno trajanje</th><th>Km dometa po satu*</th></tr>
+<tr><td>Šuko utičnica</td><td>2,3 kW</td><td>19–21 h</td><td>12–15 km</td></tr>
+<tr><td>Wallbox jednofazni</td><td>7,4 kW</td><td>6–6,5 h</td><td>40–45 km</td></tr>
+<tr><td>Wallbox trofazni</td><td>11 kW</td><td>4–4,5 h</td><td>60–70 km</td></tr>
+<tr><td>AC 22 kW (ako auto podržava)</td><td>22 kW</td><td>2–2,5 h</td><td>120–140 km</td></tr>
+<tr><td>DC brzi punjač</td><td>50 kW</td><td>55–65 min</td><td>—</td></tr>
+<tr><td>DC ultrabrzi</td><td>150 kW i više</td><td>20–35 min</td><td>—</td></tr>
+</table></div>
+<p><small>* Uz potrošnju oko 16 kWh/100 km. Stvarna vremena ovise o modelu, temperaturi i krivulji punjenja.</small></p>
+
+<h2 id="krivulja">Krivulja punjenja: zašto se sporije puni iznad 80 %</h2>
+<p>Na DC punjaču auto ne puni stalnom snagom. Najveća snaga postiže se obično između 10 i 50 %, a zatim postupno pada kako bi se zaštitile ćelije. Iznad 80 % snaga često padne na trećinu ili manje. Zato je od 10 do 80 % potrebno otprilike jednako vremena kao od 80 do 100 %.</p>
+<div class="tip"><strong>Savjet:</strong> Na putovanju punite kratko i češće, od 10 do 60–70 %. Dva kratka punjenja obično su brža od jednog do 100 %.</div>
+
+<h2 id="faktori">Što još utječe na brzinu</h2>
+<ul>
+<li><strong>Temperatura baterije</strong> – hladna baterija prima mnogo manju snagu. Zimi koristite planer ruta u autu koji bateriju predgrijava prije dolaska na punjač.</li>
+<li><strong>Napon sustava</strong> – automobili s 800-voltnom arhitekturom (npr. Hyundai Ioniq 5, Kia EV6, Porsche Taycan) mogu iskoristiti vrlo snažne punjače.</li>
+<li><strong>Ugrađeni AC punjač</strong> – mnogi automobili primaju najviše 11 kW AC, pa im punjač od 22 kW ne pomaže.</li>
+<li>Neki automobili na jednoj fazi primaju samo 3,7 kW.</li>
+<li>Na nekim punjačima dva vozila dijele ukupnu snagu.</li>
+<li><strong>Stanje baterije</strong> – starija baterija može imati nešto sporije punjenje. Više u članku <a href="baterija-elektricnog-automobila.html">Baterija električnog automobila</a>.</li>
+</ul>
+
+<h2 id="primjeri">Praktični primjeri</h2>
+<h3>Svakodnevna vožnja 50 km</h3>
+<p>Potrošite oko 8 kWh. Na šuko utičnici to dopunite za oko 4 sata, a na wallboxu od 11 kW za manje od sata. Za takvu upotrebu ne trebate snažan punjač.</p>
+<h3>Zagreb – Split (oko 410 km)</h3>
+<p>Auto s 75 kWh baterijom i potrošnjom od 19 kWh/100 km na autocesti obično zahtijeva jedno punjenje od 20 do 30 minuta na brzom punjaču uz autocestu, ako krenete s punom baterijom.</p>
+<h3>Ljetovanje s obitelji</h3>
+<p>Uz klimu, prtljagu i 130 km/h potrošnja raste. Planirajte stanke svaka 2–2,5 sata, što se ionako preporučuje radi sigurnosti, i spojite ih s punjenjem.</p>
+
+<h2 id="zablude">Česte zablude o vremenu punjenja</h2>
+<p>Mnogi očekuju da će na punjaču od 150 kW auto stalno puniti tom snagom. U stvarnosti punjač daje onoliko koliko auto i baterija u tom trenutku mogu primiti, a automobil koji podržava najviše 50 kW na takvom punjaču neće se puniti nimalo brže. Snaga ispisana na stupu samo je gornja granica.</p>
+<p>Česta je i pretpostavka da je punjenje do 100 % na brzom punjaču razumno jer "već stojite tamo". Zbog krivulje punjenja posljednji postoci traju neproporcionalno dugo, pa je obično brže nastaviti put s 70–80 % i kratko stati na sljedećem punjaču.</p>
+<p>Treća zabluda tiče se kućnog punjenja: ako auto prima 11 kW, a kuća ima jednofazni priključak, punjenje će biti ograničeno na jednofaznu snagu, bez obzira na to koliko je punjač snažan na papiru.</p>
+
+<h2 id="izracun">Kako sami izračunati vrijeme za svoj auto</h2>
+<ol>
+<li>U uputama ili na stranici proizvođača pronađite neto kapacitet baterije i najveću snagu AC i DC punjenja.</li>
+<li>Odredite koliko energije trebate: kapacitet pomnožite s razlikom u postocima, primjerice 60 kWh × 0,6 za punjenje s 20 na 80 %.</li>
+<li>Uzmite najmanju od snaga punjača i automobila te njome podijelite potrebnu energiju.</li>
+<li>Dodajte desetak posto zbog gubitaka, a zimi i na DC punjaču još malo rezerve.</li>
+</ol>
+
+<h2 id="savjeti">Kako skratiti vrijeme punjenja</h2>
+<ol>
+<li>Kod kuće ugradite wallbox prilagođen snazi vašeg auta.</li>
+<li>Na putu birajte punjače snage veće od maksimuma vašeg auta.</li>
+<li>Zimi uključite predgrijavanje baterije putem navigacije.</li>
+<li>Stignite na punjač s 10–20 % baterije, jer je tada snaga najveća.</li>
+<li>Prekinite punjenje na 80 % ako vam toliko treba za sljedeću dionicu.</li>
+</ol>
+<p>Više o vrstama punjača i konektorima pročitajte u članku <a href="punjenje-i-punjaci-za-elektricna-vozila.html">Punjenje i punjači za električna vozila</a>, a o trošku u članku <a href="cijene-punjenja-elektricnih-vozila.html">Cijene punjenja</a>.</p>
+
+<h2 id="faq">Česta pitanja</h2>
+<div class="faq">
+<details><summary>Koliko traje punjenje do 100 %?</summary><p>Na wallboxu od 11 kW baterija od 60 kWh puni se od nule do 100 % za otprilike 6 sati. Na DC punjaču posljednjih 20 % traje neproporcionalno dugo.</p></details>
+<details><summary>Šteti li brzo punjenje bateriji?</summary><p>Povremeno brzo punjenje ne šteti. Vrlo često punjenje na ultrabrzim punjačima može malo ubrzati starenje, pa je za svakodnevicu bolje AC punjenje.</p></details>
+<details><summary>Zašto se auto zimi puni sporije?</summary><p>Hladna baterija ne može primiti veliku struju. Predgrijavanje prije dolaska na punjač značajno skraćuje vrijeme.</p></details>
+<details><summary>Treba li mi punjač od 22 kW kod kuće?</summary><p>Samo ako vaš auto prima 22 kW AC i imate odgovarajuću priključnu snagu. Za većinu je dovoljno 11 kW.</p></details>
+</div>

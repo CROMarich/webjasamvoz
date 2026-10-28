@@ -1,0 +1,55 @@
+<!--
+publish: 2027-03-25
+title: Kako radi sustav ubrizgavanja goriva?
+description: Od pumpe u spremniku do dizne u cilindru: kako rade indirektno i direktno ubrizgavanje benzina i common rail kod dizela, te što najčešće otkazuje.
+category: Održavanje
+emoji: 💉
+readtime: 7
+-->
+<p class="lead">Rasplinjač je u osobnim automobilima povijest već desetljećima. Danas o tome koliko goriva ide u motor odlučuje upravljačka jedinica, tisućama puta u minuti, na temelju podataka sa senzora. Razumjeti kako sustav ubrizgavanja radi pomaže prepoznati kvar i razgovarati s mehaničarom bez nagađanja.</p>
+
+<h2 id="osnova">Osnovna ideja</h2>
+<p>Motor treba točan omjer zraka i goriva. Kod benzinca je idealan omjer za potpuno izgaranje otprilike 14,7 kilograma zraka na kilogram goriva. Upravljačka jedinica mjeri koliko zraka ulazi u motor, preko mjerača protoka ili <a href="map-senzor.html">MAP senzora</a>, prati okretaje, temperaturu, položaj papučice gasa i sastav ispušnih plinova preko lambda sonde. Iz toga izračuna koliko dugo treba otvoriti diznu i u kojem trenutku.</p>
+<p>Dizna je zapravo vrlo brz elektromagnetski ili piezoelektrični ventil. Gorivo do nje dolazi pod tlakom, a jedinica je otvara na djelić milisekunde. Što dulje je otvorena, to više goriva ulazi.</p>
+
+<h2 id="put-goriva">Put goriva</h2>
+<ol>
+<li>Električna pumpa u spremniku potiskuje gorivo prema motoru.</li>
+<li>Gorivo prolazi kroz filter, koji zadržava nečistoće i kod dizela vodu.</li>
+<li>Kod direktnog ubrizgavanja mehanička visokotlačna pumpa na motoru podiže tlak.</li>
+<li>Gorivo dolazi u zajedničku cijev (rail) iz koje se napajaju sve dizne.</li>
+<li>Dizne ubrizgavaju gorivo u usisnu granu ili izravno u cilindar.</li>
+</ol>
+
+<h2 id="benzin">Ubrizgavanje kod benzinaca</h2>
+<p>Kod indirektnog ubrizgavanja (često zvanog MPI) dizne prskaju gorivo u usisni kanal ispred ventila. Tlak je nizak, obično nekoliko bara. Sustav je jednostavan, jeftin i dugovječan, a gorivo usput ispire usisne ventile.</p>
+<p>Kod direktnog ubrizgavanja (oznake poput TSI, GDI, EcoBoost, ovisno o proizvođaču) gorivo ide ravno u cilindar pod tlakom od desetaka pa do nekoliko stotina bara. To omogućuje preciznije doziranje, manju potrošnju i više snage iz turbo motora. Mana je što se usisni ventili više ne ispiru gorivom, pa se na njima s vremenom nakuplja čađa. Neki noviji motori kombiniraju oba sustava upravo zbog toga.</p>
+
+<h2 id="dizel">Common rail kod dizela</h2>
+<p>Moderni dizeli gotovo svi koriste common rail. Tlak goriva u zajedničkoj cijevi doseže od otprilike 1600 do više od 2000 bara, ovisno o generaciji. Pri tolikom tlaku gorivo se raspršuje u vrlo sitne kapljice, što znači tiši rad i čišće izgaranje. Dizna može u jednom ciklusu ubrizgati više puta: malu predubrizgu za mekši rad, glavnu dozu i naknadne doze koje pomažu regeneraciji <a href="dpf-filter.html">DPF filtra</a>.</p>
+<p>Stariji dizeli imali su pumpa-dizne ili rotacijske pumpe. Rade po istom načelu visokog tlaka, ali s manje mogućnosti preciznog upravljanja.</p>
+
+<div class="table-wrap"><table>
+<tr><th>Sustav</th><th>Približni tlak</th><th>Prednosti</th><th>Tipični problemi</th></tr>
+<tr><td>Indirektno benzin</td><td>3-5 bara</td><td>Jednostavno, pouzdano</td><td>Rijetko, prljave dizne</td></tr>
+<tr><td>Direktno benzin</td><td>50-350 bara</td><td>Manja potrošnja, više snage</td><td>Čađa na ventilima, VT pumpa</td></tr>
+<tr><td>Common rail dizel</td><td>1600-2500 bara</td><td>Tih rad, niska potrošnja</td><td>Dizne, VT pumpa, osjetljivost na gorivo</td></tr>
+</table></div>
+
+<h2 id="kvarovi">Što najčešće otkazuje</h2>
+<p>Dizne se troše i prljaju. Simptomi su grub rad u leru, trzanje, dim i veća potrošnja; više o tome u članku <a href="kako-prepoznati-kvar-dizni.html">kako prepoznati kvar dizni</a>. Visokotlačna pumpa kod dizela vrlo je osjetljiva na vodu i nečistoće u gorivu, pa je redovita zamjena filtera najjeftinija zaštita. Električna pumpa u spremniku može oslabiti i dati premali tlak pod opterećenjem.</p>
+<p>Senzori su jednako važni kao i mehanika. Ako mjerač protoka zraka laže, jedinica će ubrizgati krivu količinu i motor će <a href="zasto-motor-trosi-previse-goriva.html">trošiti previše goriva</a> ili gubiti snagu, iako su dizne ispravne.</p>
+
+<h2 id="odrzavanje">Kako produljiti vijek sustava</h2>
+<p>Sustav ubrizgavanja ne traži mnogo, ali traži redovitost. Mijenjajte filter goriva prema servisnom planu, a kod dizela razmislite i o kraćem intervalu. Točite na provjerenim postajama i ne vozite stalno na rezervi, jer se električna pumpa hladi gorivom. Kod direktnih benzinaca povremena dulja vožnja na otvorenoj cesti pomaže da motor radi pri većem opterećenju i manje se zaprlja.</p>
+<p>Pazite i na ulje: kod mnogih direktnih benzinaca visokotlačnu pumpu pokreće bregasta osovina, pa je dobro podmazivanje važno i za nju. Ako se pojavi lampica motora, grub rad ili miris goriva u motornom prostoru, ne odgađajte dijagnozu. Curenje goriva na vrućem motoru opasno je, a mala greška u ubrizgavanju vremenom može oštetiti katalizator ili DPF.</p>
+
+<div class="tip"><strong>Savjet:</strong> Kod dizela s common railom mehaničar može na dijagnostici očitati korekcije pojedinih dizni. Velika odstupanja jednog cilindra često otkriju lošu diznu prije nego što počne praviti ozbiljne probleme.</div>
+
+<h2 id="faq">Česta pitanja</h2>
+<div class="faq">
+<details><summary>Pomažu li aditivi za čišćenje dizni?</summary><p>Kod blago zaprljanih dizni mogu pomoći, ali neće popraviti mehanički istrošenu diznu. Kvalitetno gorivo i redovit filter važniji su od aditiva.</p></details>
+<details><summary>Kako znam ima li moj auto direktno ubrizgavanje?</summary><p>Pogledajte tehničke podatke motora ili oznaku modela. Većina turbo benzinaca proizvedenih zadnjih petnaestak godina ima direktno ubrizgavanje.</p></details>
+<details><summary>Zašto je direktni benzinac glasniji na hladno?</summary><p>Visokotlačna pumpa i dizne stvaraju karakteristično kuckanje. Na hladnom je izraženije i obično je normalno.</p></details>
+</div>
+<p><small>Izvori: tehnička dokumentacija proizvođača sustava ubrizgavanja (Bosch, Denso, Delphi) i opći principi rada motora s unutarnjim izgaranjem.</small></p>

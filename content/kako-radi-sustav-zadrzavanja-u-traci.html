@@ -1,0 +1,47 @@
+<!--
+publish: 2027-03-24
+title: Kako radi sustav zadržavanja u traci?
+description: Upozorenje na napuštanje trake, aktivno zadržavanje i centriranje u traci: kako kamera čita crte na cesti, kako sustav okreće volan i zašto ga mnogi isključuju.
+category: Oprema
+emoji: 🛣️
+readtime: 7
+-->
+<p class="lead">Volan vam lagano zatitra u rukama ili se sam okrene nekoliko stupnjeva prema sredini trake. To je sustav zadržavanja u traci, koji je od srpnja 2024. obvezan na svim novim automobilima registriranim u Europskoj uniji. Neki ga vozači cijene na autocesti, drugi ga isključe čim sjednu u auto. Da biste odlučili sami, vrijedi znati kako radi.</p>
+
+<h2 id="vrste">Tri razine sustava</h2>
+<p>Pod istim nazivom kriju se sustavi različitih mogućnosti. Proizvođači ih nazivaju različitim imenima, poput Lane Assist, Lane Keeping Assist ili Lane Departure Warning, ali gotovo uvijek pripadaju jednoj od ovih skupina:</p>
+<div class="table-wrap"><table>
+<tr><th>Sustav</th><th>Što radi</th><th>Kako se osjeća</th></tr>
+<tr><td>Upozorenje na napuštanje trake (LDW)</td><td>samo upozorava</td><td>zvuk, vibracija volana ili sjedala</td></tr>
+<tr><td>Zadržavanje u traci (LKA)</td><td>korigira smjer kad auto dotakne crtu</td><td>kratki zakret volana prema traci</td></tr>
+<tr><td>Centriranje u traci (LCA)</td><td>stalno drži auto u sredini trake</td><td>volan se lagano sam okreće cijelo vrijeme</td></tr>
+<tr><td>Hitno zadržavanje (ELKS)</td><td>jači zahvat kod opasnog izlaska iz trake</td><td>odlučan zakret, primjerice prema rubu ceste</td></tr>
+</table></div>
+
+<h2 id="kamera">Kako auto vidi trake</h2>
+<p>Glavni senzor je kamera iza vjetrobranskog stakla, u kućištu kod unutarnjeg retrovizora. Softver u slici traži svijetle crte na tamnijoj podlozi, prepoznaje punu i isprekidanu crtu te procjenjuje zakrivljenost ceste i položaj auta u traci. Napredniji sustavi prepoznaju i rub asfalta bez crte, travu ili ogradu.</p>
+<p>Uz kameru, jedinica koristi podatke o brzini, kutu zakreta volana i pokazivačima smjera. Ako ste uključili žmigavac, sustav pretpostavlja da namjerno mijenjate traku i ne reagira. Kod nekih modela pomaže i radar mrtvog kuta, pa auto ne dopušta prelazak u traku u kojoj vas netko pretječe. O tome više u tekstu o <a href="sustav-nadzora-mrtvog-kuta.html">sustavu nadzora mrtvog kuta</a>.</p>
+
+<h2 id="volan">Kako sustav okreće volan</h2>
+<p>Aktivni sustavi mogući su zato što današnji automobili imaju električni servo upravljač. Elektromotor koji vam inače olakšava okretanje volana može dodati mali okretni moment u željenom smjeru. Sila je namjerno ograničena tako da je vozač uvijek može lako nadjačati. Razlika između hidrauličnog i električnog servo sustava objašnjena je u članku <a href="hidraulicni-ili-elektricni-servo-volan.html">hidraulični ili električni servo volan</a>.</p>
+<p>Neki stariji ili jednostavniji sustavi umjesto volana koriste kočnice: lagano prikoče kotače na jednoj strani i tako zakrenu auto prema traci, slično kao <a href="kako-radi-esp.html">ESP</a>.</p>
+<p>Centriranje u traci traži da vozač drži ruke na volanu. Auto to provjerava senzorom okretnog momenta, a kod nekih modela kapacitivnim senzorom u obruču volana. Ako ruke maknete, nakon nekoliko sekundi slijede upozorenja, a kod nekih sustava i postupno zaustavljanje vozila.</p>
+
+<h2 id="problemi">Kada sustav ne radi dobro</h2>
+<p>Hrvatske ceste nisu uvijek idealne za kameru. Izblijedjele crte, privremene žute crte kod radova uz stare bijele, zakrpe asfalta, tragovi vode i sjene stabala zbunjuju softver. Na uskim lokalnim cestama bez rubne crte sustav ponekad vuče auto prema sredini ceste ili reagira kad mimoilazite parkirano vozilo.</p>
+<p>Kamera ne vidi kroz prljavo ili zamagljeno staklo, a niska zimska sunca ili kiša noću smanjuju kontrast. Napuknuto staklo ispred kamere ili zamjena stakla bez kalibracije također mogu uzrokovati da sustav vuče u stranu. Zašto je to važno, pišemo u članku <a href="sto-znaci-kalibracija-radara.html">što znači kalibracija radara</a>, a općenito o pogreškama senzora u tekstu <a href="zasto-senzori-automobila-grijese.html">zašto senzori automobila ponekad griješe</a>.</p>
+<div class="tip"><strong>Savjet:</strong> Ako vas sustav smeta na lokalnim cestama, provjerite postavke. Mnogi auti dopuštaju da ostavite samo upozorenje ili smanjite osjetljivost, umjesto da ga potpuno isključite.</div>
+
+<h2 id="iskljucivanje">Smije li se isključiti?</h2>
+<p>Propisi EU zahtijevaju da se sustav uključi pri svakom pokretanju vozila, ali vozač ga smije ručno isključiti. Zato se kod mnogih automobila nakon svakog paljenja ponovno aktivira. Neki modeli imaju tipku ili prečac na zaslonu za brzo isključivanje. Isključivanje nije prekršaj, ali odgovornost za držanje trake tada je isključivo vaša, kao i inače.</p>
+
+<h2 id="umor">Pomoć kod umora i nepažnje</h2>
+<p>Najveća korist sustava je u trenucima kada vozač nije potpuno prisutan: kod umora na noćnoj vožnji, kratkog pogleda prema navigaciji ili traženja nečega na suvozačevom sjedalu. Izlijetanje s ceste i prelazak u suprotni smjer među najtežim su vrstama nesreća, a upravo njih sustav pokušava spriječiti. Mnogi automobili uz to imaju i nadzor umora koji prati način upravljanja i preporučuje pauzu kad primijeti da vozač vijuga u traci.</p>
+
+<h2 id="faq">Česta pitanja</h2>
+<div class="faq">
+<details><summary>Zašto volan vuče kad prelazim crtu pri pretjecanju?</summary><p>Vjerojatno niste uključili pokazivač smjera. Sustav tada misli da nenamjerno napuštate traku.</p></details>
+<details><summary>Može li sustav zadržavanja voziti umjesto mene?</summary><p>Ne. I najnapredniji sustavi u serijskim autima traže stalni nadzor vozača i ruke na volanu.</p></details>
+<details><summary>Radi li sustav pri malim brzinama?</summary><p>Većina sustava radi tek iznad otprilike 60 km/h, a centriranje uz adaptivni tempomat kod nekih modela i u koloni.</p></details>
+</div>
+<p><small>Izvori: Uredba (EU) 2019/2144 o općoj sigurnosti vozila, upute za uporabu vozila više proizvođača, Euro NCAP protokoli za sustave pomoći vozaču.</small></p>

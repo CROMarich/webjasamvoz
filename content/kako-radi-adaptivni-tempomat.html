@@ -1,0 +1,49 @@
+<!--
+publish: 2027-03-14
+title: Kako radi adaptivni tempomat?
+description: Adaptivni tempomat radarom i kamerom prati vozilo ispred i sam usporava i ubrzava. Kako radi, što znače postavke razmaka i gdje su mu granice u stvarnoj vožnji.
+category: Oprema
+emoji: 📡
+readtime: 7
+-->
+<p class="lead">Klasični tempomat drži brzinu, a adaptivni drži i razmak. Kad na autocesti sustignete kamion koji vozi 90 km/h, auto sam uspori i vozi iza njega, a kad prijeđete u lijevu traku, vrati se na vaših 130. Kod mnogih modela uz automatski mjenjač može se čak zaustaviti u koloni i ponovno krenuti. Kako sve to auto zna i gdje prestaje njegovo znanje?</p>
+
+<h2 id="senzori">Senzori: radar i kamera</h2>
+<p>Srce adaptivnog tempomata (ACC, adaptive cruise control) najčešće je radar u prednjem dijelu auta, obično iza znaka proizvođača ili u donjem dijelu maske. Radi na frekvencijama oko 77 GHz, šalje radio valove i mjeri odbijeni signal. Iz vremena povratka računa udaljenost, a iz promjene frekvencije (Dopplerov efekt) relativnu brzinu vozila ispred.</p>
+<p>Uz radar, većina novijih sustava koristi i kameru na vjetrobranskom staklu, kod retrovizora. Kamera prepoznaje oblik vozila, trake i znakove, a jedinica spaja podatke s oba senzora. Neki proizvođači, primjerice Subaru sa sustavom EyeSight, oslanjaju se na stereo kameru bez radara. Svaki pristup ima prednosti: radar bolje vidi kroz kišu i maglu, kamera bolje razumije što vidi.</p>
+
+<h2 id="regulacija">Kako sustav odlučuje</h2>
+<p>Vozač postavlja dvije stvari: najveću brzinu i razmak, obično u tri do pet stupnjeva prikazanih crticama na ploči. Razmak se ne mjeri u metrima nego u vremenu, najčešće od otprilike jedne do oko dvije i pol sekunde. Kod veće brzine isti stupanj znači veći razmak u metrima.</p>
+<p>Ako ispred nema nikoga, sustav radi kao obični tempomat. Kad radar uoči sporije vozilo u vašoj traci, jedinica prvo smanjuje gas, zatim koristi kočenje motorom, a po potrebi i kočnice preko istog hidrauličkog modula koji koristi <a href="kako-radi-esp.html">ESP</a>. Jačina kočenja je ograničena, obično na otprilike trećinu punog kočenja. Ako treba više, sustav vas upozorava zvukom i porukom da preuzmete, a u krajnjem slučaju uključuje se <a href="kako-radi-automatsko-kocenje-u-nuzdi.html">automatsko kočenje u nuždi</a>.</p>
+
+<h2 id="stop-go">Stop and go i rad u koloni</h2>
+<p>Sustavi s funkcijom stop and go mogu auto zaustaviti do nule. Nakon kratkog stajanja, obično do nekoliko sekundi, auto sam kreće za vozilom ispred. Nakon duljeg stajanja traži potvrdu vozača, pritisak tipke RES ili lagani dodir gasa. Kod ručnog mjenjača ova funkcija u pravilu ne postoji, a ACC se isključuje ispod neke minimalne brzine.</p>
+<p>U gužvi na zagrebačkoj obilaznici ili pred naplatnim postajama ova funkcija znatno smanjuje umor. Ipak, ostaje vožnja s rukama na volanu i pogledom na cestu.</p>
+
+<h2 id="razlike">Razlike između sustava</h2>
+<div class="table-wrap"><table>
+<tr><th>Značajka</th><th>Osnovni ACC</th><th>Napredniji ACC</th></tr>
+<tr><td>Raspon brzine</td><td>od oko 30 km/h naviše</td><td>od 0 km/h (stop and go)</td></tr>
+<tr><td>Senzori</td><td>radar ili kamera</td><td>radar i kamera zajedno</td></tr>
+<tr><td>Prilagodba zavojima</td><td>nema</td><td>usporava prema karti ili kameri</td></tr>
+<tr><td>Ograničenja brzine</td><td>ručno postavljanje</td><td>preuzima brzinu sa znakova</td></tr>
+<tr><td>Upravljanje</td><td>samo brzina</td><td>u kombinaciji s centriranjem u traci</td></tr>
+</table></div>
+<p>Kombinacija adaptivnog tempomata i aktivnog centriranja u traci često se reklamira kao poluautonomna vožnja. U stvarnosti je to razina 2: auto pomaže, ali vozač je cijelo vrijeme odgovoran. Kako radi drugi dio te kombinacije, opisujemo u tekstu o <a href="kako-radi-sustav-zadrzavanja-u-traci.html">sustavu zadržavanja u traci</a>.</p>
+
+<h2 id="granice">Gdje adaptivni tempomat griješi</h2>
+<p>Radar najbolje vidi vozila koja se kreću. Vozilo koje stoji u traci, primjerice pokvareni auto iza zavoja ili kraj kolone, sustavi mnogo teže prepoznaju, osobito pri većim brzinama, jer radar mora razlikovati stojeće vozilo od prometnog znaka, ograde ili mosta. Zato upute za uporabu redovito upozoravaju da ACC ne reagira pouzdano na stojeće prepreke.</p>
+<p>Drugi tipični problemi su vozila koja se naglo ubace ispred vas, motocikli uz rub trake, zavoji u kojima radar gleda u susjednu traku, te izlazi s autoceste gdje auto ubrzava jer je vozilo ispred skrenulo. Snijeg, led, blato ili kukci na radaru mogu isključiti sustav, uz poruku na ploči. Zašto se to događa, pišemo u članku <a href="zasto-senzori-automobila-grijese.html">zašto senzori automobila ponekad griješe</a>.</p>
+<div class="tip"><strong>Savjet:</strong> Na autocesti birajte razmak od barem dvije sekunde, odnosno jedan od dva najveća stupnja. Najkraći stupanj ostavlja sustavu i vama premalo vremena ako vozilo ispred naglo zakoči.</div>
+
+<h2 id="savjeti">Kako se naviknuti na adaptivni tempomat</h2>
+<p>Prvih nekoliko vožnji koristite ga na autocesti s umjerenim prometom, gdje je ponašanje sustava najpredvidljivije. Promatrajte kada počinje usporavati iza sporijeg vozila i koliko kasno reagira na vozilo koje se ubacuje. Mnogi auti nude i način rada koji pri pretjecanju ne dopušta da prođete desno od sporijeg vozila u lijevoj traci, što je u skladu s pravilima vožnje na autocesti.</p>
+<p>Kad se približavate naplatnoj postaji, radovima ili kraju kolone, preuzmite kontrolu ranije nego što mislite da je potrebno. Sustav je projektiran za ravnomjernu vožnju, a ne za iznenađenja. Kod automobila s ručnim mjenjačem vodite računa i o stupnju prijenosa, jer sustav ne može spustiti brzinu umjesto vas.</p>
+
+<h2 id="faq">Česta pitanja</h2>
+<div class="faq">
+<details><summary>Troši li adaptivni tempomat više goriva?</summary><p>Uglavnom ne. Ravnomjerno praćenje kolone može čak smanjiti potrošnju, ali agresivne postavke s malim razmakom i čestim kočenjem je povećavaju.</p></details>
+<details><summary>Radi li adaptivni tempomat noću?</summary><p>Radi. Radar ne ovisi o svjetlu, a kamera noću uglavnom prati svjetla vozila. Po jakoj kiši ili snijegu sustav se može privremeno isključiti.</p></details>
+<details><summary>Je li adaptivni tempomat siguran?</summary><p>Ako se koristi kao pomoć, a ne kao autopilot, većina istraživanja smatra ga korisnim. Detaljnije u članku <a href="je-li-adaptivni-tempomat-siguran.html">je li adaptivni tempomat siguran</a>.</p></details>
+</div>
+<p><small>Izvori: upute za uporabu vozila više proizvođača, SAE J3016 podjela razina automatizacije vožnje, opća tehnička literatura o automobilskim radarima.</small></p>

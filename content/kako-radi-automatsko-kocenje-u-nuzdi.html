@@ -1,0 +1,51 @@
+<!--
+publish: 2027-03-19
+title: Kako radi automatsko kočenje u nuždi?
+description: Automatsko kočenje u nuždi (AEB) samo zakoči kad vozač ne reagira. Kako prepoznaje opasnost, koliko može spriječiti i zašto ponekad reagira kad ne treba.
+category: Oprema
+emoji: 🛑
+readtime: 7
+-->
+<p class="lead">U gradskoj koloni vozač na trenutak pogleda u mobitel, a vozilo ispred naglo stane. Prije nego što noga stigne do kočnice, auto se sam zaustavi uz glasan zvučni signal. Upravo za takve situacije postoji automatsko kočenje u nuždi, poznato po kratici AEB (Autonomous Emergency Braking). Od srpnja 2024. obvezno je na svim novim automobilima registriranim u Europskoj uniji.</p>
+
+<h2 id="faze">Kako sustav reagira korak po korak</h2>
+<p>AEB ne koči odmah punom snagom. Većina sustava radi u nekoliko faza, ovisno o tome koliko je vremena preostalo do mogućeg sudara:</p>
+<div class="table-wrap"><table>
+<tr><th>Faza</th><th>Što se događa</th></tr>
+<tr><td>1. Upozorenje</td><td>zvučni signal i svjetlosna poruka, ponekad trzaj kočnice</td></tr>
+<tr><td>2. Priprema</td><td>pločice se primiču diskovima, pojačava se kočni asistent</td></tr>
+<tr><td>3. Djelomično kočenje</td><td>auto usporava ako vozač ne reagira</td></tr>
+<tr><td>4. Puno kočenje</td><td>maksimalno usporavanje neposredno pred sudar</td></tr>
+</table></div>
+<p>Ako vozač u međuvremenu zakoči preslabo, sustav pojačava kočenje. Ako vozač naglo skrene ili snažno doda gas, sustav to tumači kao svjesnu reakciju i povlači se.</p>
+
+<h2 id="senzori">Kako sustav vidi opasnost</h2>
+<p>AEB koristi isti radar i kameru kao <a href="kako-radi-adaptivni-tempomat.html">adaptivni tempomat</a>. Jedinica stalno računa vrijeme do sudara (TTC, time to collision) iz udaljenosti i razlike brzina. Kad to vrijeme padne ispod određenog praga, a vozač ne reagira, kreće upozorenje, zatim kočenje.</p>
+<p>Kamera je ključna za prepoznavanje pješaka i biciklista, koje radar teže razlikuje od okoline. Noviji sustavi reagiraju i kod skretanja preko suprotnog smjera, na pješake pri vožnji unatrag ili na vozila na križanju. Mogućnosti se znatno razlikuju po modelu i godini proizvodnje.</p>
+
+<h2 id="kocnice">Kako auto koči bez vozača</h2>
+<p>Kočenje izvodi hidraulički modul <a href="kako-radi-esp.html">ESP-a</a>, koji ima vlastitu pumpu i ventile i može stvoriti tlak u kočnicama bez pritiska papučice. Pritom radi i <a href="kako-radi-abs.html">ABS</a>, pa kotači ne blokiraju. Neki noviji automobili imaju elektromehanički kočioni servo koji tlak stvara još brže.</p>
+
+<h2 id="ucinkovitost">Koliko AEB stvarno pomaže</h2>
+<p>Istraživanja osiguravajućih instituta i organizacije Euro NCAP pokazuju da sustavi automatskog kočenja znatno smanjuju broj naleta na stražnji dio vozila, osobito pri gradskim brzinama. Točan postotak ovisi o studiji i sustavu, ali učinak se smatra jednim od najvećih među sustavima pomoći vozaču.</p>
+<p>Pri malim brzinama, otprilike do 30 do 50 km/h ovisno o sustavu, AEB često može potpuno izbjeći sudar. Pri većim brzinama najčešće ga ne izbjegne, ali smanji brzinu udarca, što znatno smanjuje ozljede. Fizika ostaje ista: na mokroj ili zaleđenoj cesti zaustavni put je dulji, a sustav ga ne može skratiti. Više o tome u tekstu <a href="kocenje-na-mokroj-cesti.html">kočenje na mokroj cesti</a>.</p>
+
+<h2 id="greske">Lažna kočenja i propušteni slučajevi</h2>
+<p>Sustav mora biti dovoljno oprezan da ne propusti stvarnu opasnost, a ne smije kočiti bez razloga, jer neočekivano kočenje na autocesti može izazvati nalet vozila iza. Zato proizvođači postavljaju pragove s rezervom. Lažna reakcija ipak se može dogoditi kod metalnih objekata, oštrih zavoja, parkiranih vozila uz cestu ili naglog skretanja vozila ispred. Uzroke opisujemo u članku <a href="zasto-senzori-automobila-grijese.html">zašto senzori automobila ponekad griješe</a>.</p>
+<div class="tip"><strong>Savjet:</strong> AEB se može isključiti, ali na većini novih auta ponovno se uključuje pri svakom paljenju. Ostavite ga uključenim, a ako vas često lažno upozorava, provjerite kalibraciju i čistoću senzora prije nego što ga proglasite neupotrebljivim.</div>
+
+<h2 id="servis">Na što paziti nakon popravka</h2>
+<p>Nakon udarca u prednji dio, zamjene odbojnika, nosača radara ili vjetrobranskog stakla sustav mora biti ponovno kalibriran. Neispravno usmjeren radar može kočiti zbog vozila u susjednoj traci ili propustiti vozilo u vašoj. Ako kupujete rabljeni auto, a lampica sustava pomoći svijeti, to može biti znak loše popravljene štete. Kako takvu štetu prepoznati, pišemo u tekstu <a href="kako-prepoznati-automobil-koji-je-bio-udaren.html">kako prepoznati automobil koji je bio udaren</a>.</p>
+
+<h2 id="vozac">Što to znači za vozača</h2>
+<p>AEB je posljednja linija obrane, a ne način vožnje. Sustav je projektiran da reagira kad je vozač već zakasnio, pa je kočenje naglo i neugodno. Ako ga doživite, to je znak da je razmak bio premalen ili da je pažnja bila drugdje. Najbolje je voziti tako da se sustav nikad ne mora uključiti: s razmakom od barem dvije sekunde, bez mobitela u ruci i uz prilagođenu brzinu.</p>
+
+<p>Vrijedi znati i da sustav kod nekih automobila nakon automatskog kočenja zadrži auto zaustavljenim nekoliko sekundi, kako se ne bi otkotrljao prema prepreci.</p>
+
+<h2 id="faq">Česta pitanja</h2>
+<div class="faq">
+<details><summary>Radi li AEB pri vožnji unatrag?</summary><p>Kod nekih modela da, uz pomoć parkirnih senzora i stražnjih radara. Nije sastavni dio svakog sustava.</p></details>
+<details><summary>Hoće li AEB zakočiti zbog životinje na cesti?</summary><p>Možda, ako je dovoljno velika i senzori je prepoznaju kao prepreku. Na to se ne treba oslanjati.</p></details>
+<details><summary>Utječe li AEB na cijenu osiguranja?</summary><p>Ponegdje osiguravatelji uzimaju u obzir sigurnosnu opremu, ali to ovisi o osiguravatelju i nije pravilo.</p></details>
+</div>
+<p><small>Izvori: Uredba (EU) 2019/2144 o općoj sigurnosti vozila, Euro NCAP protokoli ispitivanja AEB sustava, upute za uporabu vozila više proizvođača.</small></p>

@@ -1,0 +1,49 @@
+# Svaki dan izgradi stranicu i objavi je na GitHub Pages.
+# Članci s datumom "publish" koji je stigao tada automatski izlaze.
+name: Dnevna objava
+
+on:
+  schedule:
+    - cron: '0 5 * * *'   # svaki dan u 05:00 UTC (06:00 zimi, 07:00 ljeti po hrvatskom vremenu)
+  push:
+    branches: [main]
+  workflow_dispatch:       # ručno pokretanje iz kartice Actions
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+      - run: node build.js
+        env:
+          TZ: Europe/Zagreb
+      - name: Pripremi datoteke za objavu
+        run: |
+          mkdir _site
+          cp -r index.html 404.html *.html robots.txt sitemap.xml favicon.svg CNAME ads.txt css js images blog kategorija autor _site/ 2>/dev/null || true
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

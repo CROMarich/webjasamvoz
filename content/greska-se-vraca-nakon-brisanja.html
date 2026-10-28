@@ -1,0 +1,41 @@
+<!--
+publish: 2027-01-29
+title: Zašto se greška vraća nakon brisanja?
+description: Obrisali ste grešku dijagnostikom, a ona se vratila za dva dana. Zašto brisanje ne popravlja kvar i kako povratak greške pomaže pronaći pravi uzrok.
+category: Održavanje
+emoji: 🔁
+readtime: 6
+-->
+<p class="lead">Prijatelj s čitačem obriše grešku na parkiralištu, lampica nestane, svi su zadovoljni. Dva dana kasnije lampica je opet tu, s istim kodom. To nije znak da čitač ne radi, nego da je obavio točno ono što brisanje radi: izbrisao je poruku, a ne uzrok. Dobra vijest je da greška koja se vraća nosi korisnu informaciju.</p>
+
+<h2 id="brisanje">Što brisanje stvarno radi</h2>
+<p>Brisanjem grešaka upravljačka jedinica zaboravlja zapisane kodove, freeze frame podatke i rezultate samotestova. Monitori spremnosti vraćaju se na "nije dovršeno". Jedinica zatim kreće ispočetka i ponovno testira sustave tijekom vožnje. Ako je kvar i dalje prisutan, test ponovno ne prođe i greška se vraća. Kako jedinica testira i kada pali lampicu, objašnjavamo u članku <a href="zasto-se-lampica-motora-sama-ugasi.html">zašto se lampica motora sama ugasi</a>.</p>
+
+<h2 id="brzina">Brzina povratka govori mnogo</h2>
+<div class="table-wrap"><table>
+<tr><th>Kada se vrati</th><th>Što to najčešće znači</th></tr>
+<tr><td>Odmah pri paljenju</td><td>Električni prekid ili kratki spoj, senzor ne daje signal</td></tr>
+<tr><td>Nakon nekoliko minuta vožnje</td><td>Stalan kvar koji se otkrije kad motor dođe u radne uvjete</td></tr>
+<tr><td>Nakon nekoliko dana</td><td>Test koji se radi rijetko (npr. sustav isparavanja, katalizator)</td></tr>
+<tr><td>Nakon tjedana, nepravilno</td><td>Povremen kvar: vlaga, labav kontakt, dio na granici</td></tr>
+</table></div>
+
+<h2 id="uzroci">Najčešći razlozi povratka</h2>
+<p><strong>Zamijenjen je pogrešan dio.</strong> Kod lambda sonde zamijeni se sonda, a pravi uzrok je curenje zraka u usisu. Kod je simptom, a ne naziv dijela. Više u članku <a href="kako-radi-obd-dijagnostika.html">kako radi OBD dijagnostika</a>.</p>
+<p><strong>Kvar je u ožičenju.</strong> Novi senzor na oštećenom kabelu ili oksidiranom konektoru javlja istu grešku. Kabeli uz ispuh, motor i ovjes posebno su izloženi.</p>
+<p><strong>Neoriginalan ili loš dio.</strong> Jeftini senzori i lambda sonde ponekad rade izvan tolerancija koje jedinica očekuje.</p>
+<p><strong>Dio treba prilagodbu.</strong> Nakon zamjene nekih dijelova (zaklopka gasa, EGR, senzori) jedinica traži postupak učenja dijagnostikom. Bez njega greška se vraća.</p>
+<p><strong>Posljedica drugog kvara.</strong> Greška katalizatora vraća se ako motor i dalje preskače paljenje, a greška <a href="lampica-dpf.html">DPF-a</a> ako dizne prave previše čađe.</p>
+
+<h2 id="pristup">Kako pristupiti greški koja se vraća</h2>
+<p>Prije brisanja zapišite ili fotografirajte kod i freeze frame: okretaje, temperaturu, brzinu i opterećenje kad je greška nastala. Ako se greška vraća u istim uvjetima, to sužava popis. Pitajte servis je li mjerio signal senzora i ožičenje, a ne samo zamijenio dio. Kod električnih problema često pomaže provjera mase i napona, o čemu pišemo u članku <a href="kako-prepoznati-elektricni-kvar.html">kako prepoznati električni kvar na automobilu</a>.</p>
+
+<div class="tip"><strong>Savjet:</strong> Nemojte brisati greške dan prije tehničkog pregleda ili prodaje auta. Nedovršeni monitori spremnosti vide se dijagnostikom, a kupcu ili kontroloru to govori da se nešto skriva.</div>
+
+<h2 id="faq">Česta pitanja</h2>
+<div class="faq">
+<details><summary>Smijem li stalno brisati grešku ako auto normalno vozi?</summary><p>Tehnički da, ali time skrivate kvar i lampica vas više ne može upozoriti na novu, možda ozbiljniju grešku.</p></details>
+<details><summary>Zašto se greška vraća samo zimi?</summary><p>Hladnoća i vlaga utječu na kontakte, svitke paljenja i senzore. Povremena greška vezana uz vrijeme često je električna.</p></details>
+<details><summary>Može li se greška vratiti zbog slabog akumulatora?</summary><p>Može, posebno greške komunikacije i senzora. Provjerite akumulator prema članku <a href="znakovi-da-akumulator-otkazuje.html">znakovi da akumulator otkazuje</a>.</p></details>
+</div>
+<p><small>Izvori: standard OBD2 i logika samotestova upravljačkih jedinica, opća praksa dijagnostike vozila.</small></p>

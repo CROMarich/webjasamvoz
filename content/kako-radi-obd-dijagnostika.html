@@ -1,0 +1,42 @@
+<!--
+publish: 2027-02-08
+title: Kako radi OBD dijagnostika?
+description: Što je OBD2 priključak, kako upravljačka jedinica zapisuje greške, što znače kodovi poput P0301 i zašto kod nije isto što i dijagnoza kvara.
+category: Održavanje
+emoji: 🔌
+readtime: 7
+-->
+<p class="lead">Mehaničar utakne uređaj ispod volana, nešto pogleda na ekranu i kaže: "Svjećica treći cilindar." Izgleda kao čarolija, ali iza toga je prilično jednostavan sustav koji svaki auto prodan u EU otprilike od 2001. (benzinci) i 2004. (dizeli) mora imati. Razumjeti kako OBD radi pomaže vam da ne platite krive dijelove i da shvatite što vam servis zapravo govori.</p>
+
+<h2 id="sto-je">Što je OBD</h2>
+<p>OBD (On-Board Diagnostics) je sustav samodijagnostike vozila. Upravljačka jedinica motora stalno prati senzore: temperaturu, protok zraka, kisik u ispuhu, okretaje, paljenje. Kad neka vrijednost izađe iz očekivanog raspona dovoljno dugo, jedinica zapisuje kod greške i, ako greška utječe na emisije, pali <a href="lampica-motora-check-engine.html">lampicu motora</a>. Standard OBD2 propisuje oblik priključka (16 pinova, obično ispod volana), način komunikacije i dio kodova koji su isti za sve proizvođače.</p>
+
+<h2 id="kodovi">Kako čitati kod greške</h2>
+<p>Standardni kod ima pet znakova, na primjer P0301. Prvo slovo označava sustav, prva znamenka je li kod opći (0) ili specifičan za proizvođača (1), a ostatak konkretnu grešku.</p>
+<div class="table-wrap"><table>
+<tr><th>Slovo</th><th>Sustav</th><th>Primjer</th></tr>
+<tr><td>P</td><td>Motor i mjenjač (powertrain)</td><td>P0301: preskakanje paljenja na 1. cilindru</td></tr>
+<tr><td>C</td><td>Šasija: ABS, ovjes, upravljanje</td><td>Greška senzora brzine kotača</td></tr>
+<tr><td>B</td><td>Karoserija: zračni jastuci, klima, sjedala</td><td>Greška kruga zračnog jastuka</td></tr>
+<tr><td>U</td><td>Komunikacija među jedinicama</td><td>Izgubljena veza s jedinicom ABS-a</td></tr>
+</table></div>
+<p>Pored kodova, OBD daje i <strong>žive podatke</strong> (temperatura, korekcije goriva, napon) te <strong>freeze frame</strong>: snimku uvjeta u trenutku kad je greška zapisana, primjerice brzinu, okretaje i temperaturu motora. To je često korisnije od samog koda.</p>
+
+<h2 id="kod-nije-kvar">Kod nije isto što i kvar</h2>
+<p>Najveća zabluda je da kod točno kaže koji dio treba zamijeniti. Kod P0171 (presiromašna smjesa) ne znači "zamijeni lambda sondu", nego da jedinica vidi previše zraka u odnosu na gorivo. Uzrok može biti puknuto vakuumsko crijevo, prljav mjerač protoka zraka, slaba pumpa goriva ili začepljene dizne. Kod je simptom, a dijagnoza je posao koji slijedi: mjerenje, provjera živih podataka i isključivanje mogućnosti.</p>
+
+<h2 id="stanja">Aktivne, povremene i pohranjene greške</h2>
+<p>Jedinica razlikuje greške koje su prisutne sada, one koje su se dogodile i nestale, te "pending" greške koje su uočene jednom, ali još nisu potvrđene. Zato se lampica ponekad sama ugasi, a kod ostaje u memoriji. O tome više u člancima <a href="zasto-se-lampica-motora-sama-ugasi.html">zašto se lampica motora sama ugasi</a> i <a href="greska-se-vraca-nakon-brisanja.html">zašto se greška vraća nakon brisanja</a>.</p>
+
+<h2 id="pristup">Generički OBD i dijagnostika proizvođača</h2>
+<p>Generički OBD2 pokriva uglavnom motor i emisije. Za ABS, zračne jastuke, mjenjač, kodiranje ključeva ili servisne postupke (reset intervala, regeneracija DPF-a, zamjena akumulatora) treba dijagnostički alat koji govori "jezikom" konkretnog proizvođača. Zato ovlašteni servis i dobro opremljene nezavisne radionice vide više od kućnog čitača. Ako razmišljate o vlastitom uređaju, pogledajte <a href="jeftini-obd-uredaj.html">može li jeftini OBD uređaj otkriti kvar</a> i usporedbu <a href="najbolji-obd2-skeneri.html">najboljih OBD2 skenera</a>.</p>
+
+<div class="tip"><strong>Savjet:</strong> Kad vam servis očita greške, zatražite ispis ili fotografiju kodova s freeze frame podacima. Ako se kvar ponovi ili mijenjate servis, ta je informacija zlata vrijedna.</div>
+
+<h2 id="faq">Česta pitanja</h2>
+<div class="faq">
+<details><summary>Gdje se nalazi OBD priključak?</summary><p>Najčešće ispod upravljača, iznad papučica ili iza poklopca u konzoli. Kod nekih modela je u pretincu ili ispod pepeljare.</p></details>
+<details><summary>Koliko košta očitavanje grešaka u servisu?</summary><p>Okvirno 20 do 50 €, ovisno o servisu i opsegu. Neki servisi to uračunaju u popravak.</p></details>
+<details><summary>Može li OBD otkriti mehanički kvar poput istrošenog ležaja?</summary><p>Uglavnom ne. OBD vidi ono što mjere senzori, a mnogi mehanički kvarovi nemaju senzor.</p></details>
+</div>
+<p><small>Izvori: standardi SAE J1979 i ISO 15031 (OBD2), EU direktiva 98/69/EZ o emisijama, opća praksa dijagnostike vozila.</small></p>

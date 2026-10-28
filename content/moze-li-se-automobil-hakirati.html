@@ -1,0 +1,53 @@
+<!--
+publish: 2027-04-06
+title: Može li se automobil hakirati?
+description: Može li netko hakirati vaš automobil? Realni rizici poput krađe relay napadom i OBD priključkom, poznati slučajevi, nova EU pravila i kako se zaštititi.
+category: Oprema
+emoji: 🔐
+readtime: 6
+-->
+<p class="lead">Može, ali ne na način na koji to prikazuju filmovi. Zlonamjerni haker koji s laptopom iz kafića preuzme upravljač vašeg automobila na Jadranskoj magistrali u stvarnosti je iznimno malo vjerojatan scenarij. Puno je stvarniji lopov koji s jeftinim uređajem pojača signal vašeg ključa i odveze auto s parkirališta ispred zgrade. Evo što je stvarni rizik, a što pretjerivanje.</p>
+
+<h2 id="poznati-slucaj">Najpoznatiji primjer</h2>
+<p>Godine 2015. istraživači sigurnosti Charlie Miller i Chris Valasek pokazali su da mogu daljinski, preko mobilne mreže, pristupiti jednom Jeep Cherokeeju i utjecati na radio, brisače, pa i na rad motora. Bio je to kontrolirani eksperiment, a proizvođač je nakon toga opozvao oko 1,4 milijuna vozila radi ažuriranja softvera. Slučaj je industriji bio upozorenje da povezani automobili trebaju ozbiljnu zaštitu. Od tada su istraživači pronašli propuste i kod drugih marki, koje su se uglavnom ispravljale prije zlouporabe.</p>
+
+<h2 id="stvarni-rizici">Stvarni rizici za vozače</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Napad</th><th>Kako radi</th><th>Koliko je čest</th></tr></thead>
+<tbody>
+<tr><td>Relay napad na bezključni ulaz</td><td>Dva uređaja produže signal ključa iz kuće do auta</td><td>Čest kod krađa</td></tr>
+<tr><td>Napad preko OBD priključka</td><td>Lopov programira novi ključ</td><td>Poznat kod nekih modela</td></tr>
+<tr><td>CAN injection</td><td>Spajanje na kablove, npr. iza prednjeg svjetla</td><td>Prijavljen kod novijih krađa</td></tr>
+<tr><td>Daljinski napad na softver</td><td>Iskorištavanje propusta u povezanim uslugama</td><td>Rijedak, uglavnom istraživači</td></tr>
+<tr><td>Krađa računa u aplikaciji</td><td>Ukradena lozinka omogućuje otključavanje i praćenje</td><td>Moguć, ovisi o zaštiti računa</td></tr>
+</tbody>
+</table></div>
+<p>Relay napad funkcionira jer ključ bez gumba stalno odgovara na signal automobila. Jedan lopov stoji blizu vaše kuće s uređajem koji hvata signal ključa, a drugi uz auto prenosi taj signal. Auto misli da je ključ pored njega i otključa se. Više o ključevima i imobilizatoru pišemo u članku <a href="kako-radi-imobilizator.html">kako radi imobilizator</a>.</p>
+
+<h2 id="zastita">Kako se zaštititi</h2>
+<ul>
+<li>Ključ s bezključnim ulazom držite u kutiji ili vrećici koja blokira signal (Faradayev kavez), ili barem dalje od ulaznih vrata.</li>
+<li>Ako ključ ima mogućnost isključivanja bezključnog načina, a neki imaju, koristite je kad auto stoji dulje.</li>
+<li>Razmislite o dodatnoj mehaničkoj zaštiti poput brave volana ili blokade OBD priključka. Ideje imamo u članku <a href="kako-zastititi-automobil-od-krade.html">kako zaštititi automobil od krađe</a>.</li>
+<li>Aplikaciju proizvođača zaštitite jakom lozinkom i dvofaktorskom autentifikacijom.</li>
+<li>Instalirajte službena ažuriranja softvera, jer upravo ona zatvaraju sigurnosne propuste. Pogledajte članak <a href="ota-nadogradnje-automobila.html">OTA nadogradnje automobila</a>.</li>
+<li>Ne spajajte nepoznate OBD uređaje i USB stickove nepoznatog podrijetla.</li>
+</ul>
+
+<h2 id="propisi">Što kažu propisi</h2>
+<p>Od srpnja 2024. u EU-u sva nova registrirana vozila moraju ispunjavati pravilnike UNECE R155 o kibernetičkoj sigurnosti i R156 o upravljanju ažuriranjem softvera. Proizvođači moraju imati sustav upravljanja kibernetičkim rizicima tijekom životnog vijeka vozila, pratiti prijetnje i reagirati na njih. To ne znači da su novi automobili neprobojni, ali sigurnost je postala obvezna, a ne samo dobra volja proizvođača.</p>
+
+<h2 id="privatnost">Privatnost i rabljeni automobil</h2>
+<p>Povezani auto bilježi lokacije, vožnje i uparene telefone. Kod prodaje auta obrišite telefone i adrese iz sustava i uklonite vozilo sa svog računa u aplikaciji. Kod kupnje rabljenog provjerite da prethodni vlasnik više nema pristup, jer bi inače mogao vidjeti gdje je auto ili ga otključati.</p>
+<h2 id="znakovi">Znakovi da nešto nije u redu</h2>
+<p>Budite oprezni ako se auto otključava bez vaše radnje, ako aplikacija prikazuje aktivnosti koje niste radili ili ako vam proizvođač javi prijavu s nepoznatog uređaja. Promijenite lozinku računa, u servisu provjerite koliko je ključeva upareno s autom i obrišite nepoznate. Ako auto ne prepoznaje vaš ključ nakon pokušaja krađe, pogledajte članak <a href="automobil-ne-prepoznaje-kljuc.html">automobil ne prepoznaje ključ</a>.</p>
+<p>Kod sumnje na neovlaštenu radnju s autom ili pokušaj krađe obratite se i policiji. Snimke nadzornih kamera i podaci iz aplikacije mogu pomoći u istrazi, a osiguravatelj kod kasko police obično traži policijski zapisnik.</p>
+<div class="tip"><strong>Savjet:</strong> Navečer ključ ne ostavljajte na polici uz ulazna vrata. Najjeftinija i najučinkovitija zaštita od relay napada je metalna kutija ili vrećica koja blokira signal, uz cijenu od nekoliko do dvadesetak eura.</div>
+
+<h2 id="faq">Česta pitanja</h2>
+<div class="faq">
+<details><summary>Mogu li hakeri preuzeti kočnice u vožnji?</summary><p>U kontroliranim istraživanjima pokazani su takvi utjecaji kod pojedinih starijih modela, ali u stvarnoj vožnji takvi napadi nisu uobičajena prijetnja vozačima.</p></details>
+<details><summary>Jesu li stariji automobili sigurniji?</summary><p>Od daljinskih napada manje su izloženi, ali često su lakši za klasičnu krađu. Sigurnost ovisi o konkretnom modelu.</p></details>
+<details><summary>Može li netko hakirati auto preko Bluetootha?</summary><p>Teoretski su pronađeni propusti u Bluetooth sustavima, ali ih proizvođači ispravljaju ažuriranjima. Uparivanje odobravajte samo s vlastitim uređajima.</p></details>
+</div>
+<p><small>Izvori: istraživanje Millera i Valaseka (2015.), pravilnici UNECE R155 i R156, javne obavijesti proizvođača o opozivima.</small></p>

@@ -1,0 +1,42 @@
+<!--
+publish: 2027-02-28
+title: Zašto se lampica motora sama ugasi?
+description: Lampica motora upali se, pa nakon nekoliko dana nestane. Zašto upravljačka jedinica to radi, znači li to da je kvar nestao i kada ipak morate u servis.
+category: Održavanje
+emoji: 💡
+readtime: 6
+-->
+<p class="lead">Utorak ujutro zasvijetli žuta lampica motora. Sljedeći dan je još tu, a u petak je nema. Mnogi vozači to doživljavaju kao olakšanje i zaborave na nju. Ponekad s pravom, jer je uzrok bio prolazan. Ali lampica koja se sama ugasi ne znači da je kvar popravljen, nego samo da ga upravljačka jedinica trenutačno ne vidi.</p>
+
+<h2 id="logika">Kako jedinica odlučuje o lampici</h2>
+<p>Upravljačka jedinica motora testira sustave u takozvanim voznim ciklusima: paljenje, zagrijavanje motora, vožnja u određenim uvjetima i gašenje. Većina grešaka pali lampicu tek kad se ponovi u dva uzastopna ciklusa. Kad nakon toga test prođe ispravno u nekoliko ciklusa zaredom (kod mnogih auta tri), jedinica sama ugasi lampicu. Kod greške ostaje zapisan u memoriji kao povijesni još neko vrijeme, često 40 ili više ciklusa zagrijavanja. Opširnije o sustavu u članku <a href="kako-radi-obd-dijagnostika.html">kako radi OBD dijagnostika</a>.</p>
+
+<h2 id="uzroci">Tipični prolazni uzroci</h2>
+<div class="table-wrap"><table>
+<tr><th>Uzrok</th><th>Zašto nestane</th></tr>
+<tr><td>Labavo zatvoren čep spremnika goriva</td><td>Test isparavanja prođe kad se čep dobro zatvori</td></tr>
+<tr><td>Loše gorivo ili vlaga</td><td>Nakon novog točenja paljenje je opet uredno</td></tr>
+<tr><td>Vlaga u konektoru nakon kiše ili pranja motora</td><td>Kontakt se osuši</td></tr>
+<tr><td>Nizak napon pri paljenju</td><td>Nakon punjenja akumulatora nema greške</td></tr>
+<tr><td>Rubna vrijednost senzora</td><td>Senzor je na granici i ponekad prođe test</td></tr>
+</table></div>
+
+<h2 id="opasno">Kada nestanak lampice ne znači ništa dobro</h2>
+<p>Posljednji redak tablice je najvažniji. Senzor ili dio koji se tek počinje kvariti radi povremeno, pa lampica dolazi i odlazi. Tipični primjeri su svitak paljenja koji preskače samo na vlažnom ili hladnom, lambda sonda koja stari, curenje vakuuma koje se javlja samo na hladnom motoru i senzor bregaste osovine. Takve greške se vraćaju sve češće, dok jednog dana lampica ne ostane stalno upaljena ili auto ne uđe u zaštitni način rada.</p>
+<p>Posebno pazite ako je lampica <strong>treperila</strong>. Treperenje znači ozbiljno preskakanje paljenja koje može pregrijati i uništiti <a href="katalizator.html">katalizator</a>, čak i ako se lampica kasnije umirila.</p>
+
+<h2 id="sto-uciniti">Što učiniti</h2>
+<p>Zapišite kada je lampica zasvijetlila i u kojim uvjetima: hladan ili topao motor, kiša, nakon točenja, uzbrdo. Ako imate vlastiti čitač, očitajte kodove prije nego što ih jedinica izbriše i nemojte ih brisati sami. Ako ga nemate, svratite u servis dok je greška još u memoriji. Mehaničaru je mnogo lakše kad vidi kod i freeze frame nego kad mu opišete "nešto je svijetlilo prošli tjedan". Što pojedini kodovi motora znače, objašnjavamo u članku <a href="lampica-motora-check-engine.html">lampica motora (check engine)</a>.</p>
+
+<div class="tip"><strong>Savjet:</strong> Ako se lampica upalila odmah nakon točenja goriva, prvo provjerite je li čep spremnika dobro zatvoren do klika. Zatim pričekajte nekoliko dana vožnje. Ako se ugasi i ne vraća, vjerojatno je to bio uzrok.</div>
+
+<h2 id="tehnicki">Lampica i tehnički pregled</h2>
+<p>Na tehničkom pregledu provjerava se rad lampice i, kod novijih vozila, stanje OBD sustava. Upaljena lampica motora razlog je za probleme, a nedavno obrisane greške vide se po nedovršenim monitorima spremnosti. Vožnja na pregled odmah nakon brisanja grešaka zato često nije dobra ideja.</p>
+
+<h2 id="faq">Česta pitanja</h2>
+<div class="faq">
+<details><summary>Koliko dugo greška ostaje u memoriji nakon što lampica nestane?</summary><p>Ovisi o proizvođaču, ali obično desetke voznih ciklusa. Zato je i nakon nekoliko dana moguće saznati što je bilo.</p></details>
+<details><summary>Briše li odspajanje akumulatora greške?</summary><p>Kod mnogih auta da, ali time gubite i podatke koji bi pomogli dijagnozi, a ponekad i prilagodbe motora.</p></details>
+<details><summary>Lampica se gasi i pali svaki tjedan, što to znači?</summary><p>Povremen kvar koji napreduje. To je pravi trenutak za dijagnozu, prije nego što postane stalan. Pogledajte i <a href="greska-se-vraca-nakon-brisanja.html">zašto se greška vraća</a>.</p></details>
+</div>
+<p><small>Izvori: standard OBD2 i logika voznih ciklusa, upute proizvođača vozila.</small></p>

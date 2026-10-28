@@ -1,0 +1,43 @@
+<!--
+publish: 2027-02-07
+title: Kako pronaći potrošača koji prazni akumulator?
+description: Korak po korak: kako multimetrom izmjeriti struju mirovanja, pričekati da auto zaspi i vađenjem osigurača pronaći krug koji prazni akumulator.
+category: Održavanje
+emoji: 🔍
+readtime: 7
+-->
+<p class="lead">Akumulator je provjeren i dobar, a auto se svejedno ujutro teško pali. Znači da nešto troši struju dok je auto zaključan. Traženje takvog potrošača zvuči kao posao za autoelektričara, i često to i jest, ali s jednostavnim multimetrom i malo strpljenja dobar dio posla možete napraviti sami. Prije početka provjerite je li akumulator stvarno ispravan, kako opisujemo u članku <a href="zasto-se-akumulator-prazni-preko-noci.html">zašto automobil gubi struju preko noći</a>.</p>
+
+<h2 id="alat">Što vam treba</h2>
+<p>Multimetar koji mjeri struju do 10 A (može i jeftiniji, oko 15 do 30 €), ključ za stezaljku akumulatora, shema osigurača iz knjižice, ili još bolje, strujna kliješta za istosmjernu struju ako ih imate. Ključ od auta odnesite podalje, a prije početka zatvorite sva vrata. Ako vrata ili haubu morate držati otvorenima, ručno zatvorite bravu odvijačem ili pritisnite prekidač haube, da auto "misli" da je zatvoren.</p>
+
+<h2 id="mjerenje">Mjerenje struje mirovanja</h2>
+<p>Ugasite auto i zaključajte ga. Odvijte minus stezaljku i spojite multimetar serijski: jedan vrh na minus pol akumulatora, drugi na odspojenu stezaljku, s mjernim kablom u priključku za 10 A. Pazite da ne palite kontakt ni ne otvarate vrata dok je instrument spojen u tom području, jer veća struja može pregorjeti osigurač multimetra.</p>
+<p>Sada slijedi ključni korak: <strong>čekanje</strong>. Moderni auti nakon zaključavanja još dugo rade, a upravljačke jedinice zaspu postupno, obično 15 do 45 minuta. Svako otvaranje vrata budi ih ponovno. Tek kad struja padne i stabilizira se, vrijedi mjerenje.</p>
+
+<h2 id="vrijednosti">Kako čitati rezultat</h2>
+<div class="table-wrap"><table>
+<tr><th>Struja mirovanja</th><th>Značenje</th></tr>
+<tr><td>do 50 mA</td><td>Uglavnom normalno za moderni auto</td></tr>
+<tr><td>50 do 100 mA</td><td>Na granici, auto može prazniti ako dulje stoji</td></tr>
+<tr><td>100 do 300 mA</td><td>Postoji potrošač, akumulator prazni za nekoliko dana</td></tr>
+<tr><td>preko 300 mA</td><td>Jak potrošač, akumulator prazan preko noći ili dvije</td></tr>
+</table></div>
+<p>Točna dopuštena vrijednost ovisi o modelu, a neki luksuzniji auti imaju nešto veću normalnu potrošnju.</p>
+
+<h2 id="osiguraci">Vađenje osigurača</h2>
+<p>Kad je struja povišena i stabilna, vadite osigurače jedan po jedan i gledajte multimetar. Kad struja padne na normalnu vrijednost, našli ste krug. Vratite svaki osigurač prije vađenja sljedećeg, inače možete probuditi jedinice i krenuti ispočetka. Elegantnija metoda je mjerenje pada napona na osiguračima bez vađenja: na osiguraču kroz koji teče struja multimetar na mV području pokaže mali napon, pa se krug nađe bez buđenja sustava.</p>
+<p>Ako nijedan osigurač ne spušta struju, provjerite krugove koji nisu na osiguračima u kabini: alternator, anlaser i glavne osigurače kod akumulatora. Odspajanje priključka alternatora brz je test za neispravne diode.</p>
+
+<h2 id="krivci">Najčešći nalazi</h2>
+<p>Česti krivci su naknadno ugrađene kamere i alarmi, radio koji ne prima signal za gašenje, svjetlo prtljažnika ili pretinca, modul vrata ili prtljažnika, relej koji se zalijepio, OBD adapter koji je ostao utaknut (vidi <a href="jeftini-obd-uredaj.html">može li jeftini OBD uređaj otkriti kvar</a>) te jedinica koja se ne može uspavati zbog greške u komunikaciji. Kad krug nađete, sljedeći je korak saznati koji uređaj na njemu troši, o čemu opširnije pišemo i u članku <a href="kako-prepoznati-elektricni-kvar.html">kako prepoznati električni kvar</a>.</p>
+
+<div class="tip"><strong>Savjet:</strong> Prije mjerenja zapišite kodove radija i provjerite treba li vaš auto posebne postupke nakon odspajanja akumulatora, poput učenja prozora ili kodiranja. Tako izbjegnete nove probleme nakon što riješite stari.</div>
+
+<h2 id="faq">Česta pitanja</h2>
+<div class="faq">
+<details><summary>Koliko autoelektričar naplaćuje traženje potrošača?</summary><p>Ovisi o vremenu, okvirno od 40 do 150 €, a kod povremenih potrošača i više.</p></details>
+<details><summary>Zašto je struja visoka, a nakon sat vremena normalna?</summary><p>Jedinice zaspu postupno. Ako pada nakon dugog čekanja, nema potrošača ili se on javlja povremeno.</p></details>
+<details><summary>Mogu li mjeriti kliještima umjesto multimetra?</summary><p>Da, kliješta za DC struju mjere bez odspajanja akumulatora, pa auto ne gubi postavke.</p></details>
+</div>
+<p><small>Izvori: opći principi električnih sustava vozila, praksa autoelektričarskih radionica.</small></p>

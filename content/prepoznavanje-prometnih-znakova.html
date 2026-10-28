@@ -1,0 +1,49 @@
+<!--
+publish: 2027-04-10
+title: Kako radi prepoznavanje prometnih znakova?
+description: Kamera na staklu čita ograničenja i zabrane, a auto ih prikazuje na ploči. Kako radi prepoznavanje znakova, što je ISA i zašto sustav katkad pokaže krivu brzinu.
+category: Oprema
+emoji: 🚸
+readtime: 7
+-->
+<p class="lead">Prošli ste znak ograničenja na 50 km/h, a isti broj pojavio se na ploči vašeg auta. Kod novih automobila to je standard: od srpnja 2024. svako novo vozilo registrirano u EU mora imati sustav inteligentne pomoći pri održavanju brzine, a on se temelji upravo na prepoznavanju prometnih znakova. Ipak, mnogi vozači primijete da auto ponekad pokaže 30 na autocesti ili 130 u naselju. Kako sustav radi i zašto griješi?</p>
+
+<h2 id="kamera">Kamera i obrada slike</h2>
+<p>Znakove čita kamera iza vjetrobranskog stakla, obično ista koja služi za <a href="kako-radi-sustav-zadrzavanja-u-traci.html">zadržavanje u traci</a> i automatsko kočenje. Softver u slici najprije traži oblike i boje karakteristične za znakove: crveni krug ograničenja, okrugle plave znakove obveze, trokute upozorenja. Kad pronađe kandidata, uspoređuje ga s naučenim uzorcima i očitava broj ili simbol.</p>
+<p>Danas se za to koriste neuronske mreže uvježbane na milijunima slika. Sustav prepoznaje ograničenja brzine, kraj ograničenja, zabranu pretjecanja, ulaz i izlaz iz naselja, a kod nekih modela i znakove obveznog smjera, zabrane ulaza ili stop.</p>
+
+<h2 id="karta">Uloga navigacije i karte</h2>
+<p>Kamera vidi samo ono što je ispred nje. Ako je znak zaklonjen kamionom, sustav ne zna za njega. Zato većina automobila kombinira kameru s podacima iz navigacijske karte, gdje su upisana ograničenja za pojedine ceste. Kad kamera ne vidi znak, auto koristi kartu, a kad vidi, uglavnom prednost daje kameri.</p>
+<p>Problem nastaje kad je karta zastarjela. Novo ograničenje, preuređeno raskrižje ili nova obilaznica ne pojavljuju se odmah u svim kartama, pa auto ponekad prikazuje staru vrijednost. Redovito ažuriranje karata smanjuje takve pogreške.</p>
+
+<h2 id="isa">Što je ISA i što radi s očitanim znakom</h2>
+<p>Inteligentna pomoć pri održavanju brzine (ISA, Intelligent Speed Assistance) koristi očitano ograničenje da bi vas upozorila kad ga prekoračite. Propis EU dopušta proizvođaču nekoliko načina upozorenja:</p>
+<div class="table-wrap"><table>
+<tr><th>Način rada</th><th>Kako se osjeća</th></tr>
+<tr><td>Zvučno upozorenje</td><td>kratki zvučni signal pri prekoračenju</td></tr>
+<tr><td>Vibracija</td><td>titranje papučice gasa ili volana</td></tr>
+<tr><td>Otpor papučice</td><td>gas daje veći otpor iznad ograničenja</td></tr>
+<tr><td>Regulacija brzine</td><td>auto ne ubrzava iznad ograničenja dok ne pritisnete jače</td></tr>
+</table></div>
+<p>ISA ne koči i ne sprječava ubrzanje ako vozač odlučno pritisne gas. Sustav se može isključiti, ali se pri svakom paljenju ponovno uključuje. Uz <a href="kako-radi-tempomat.html">tempomat</a> ili ograničivač brzine mnogi automobili nude i preuzimanje očitanog ograničenja jednim pritiskom tipke.</p>
+
+<h2 id="greske">Zašto sustav griješi</h2>
+<p>Najčešći uzroci krivog očitanja su znakovi koji ne vrijede za vašu traku. Ograničenje na 40 km/h na izlaznoj traci autoceste kamera vidi i kad nastavljate ravno. Znakovi s dopunskom pločom, primjerice ograničenje samo za kamione, za vrijeme kiše ili u određenim satima, sustavi često ne razumiju i primijene ih na sve.</p>
+<p>Ostali uzroci su prljavi, izblijedjeli ili oštećeni znakovi, naljepnice na stražnjem dijelu kamiona i autobusa, privremena signalizacija kod radova te prljavo staklo ispred kamere. U Hrvatskoj posebnu zbrku zna izazvati i ograničenje koje vrijedi do sljedećeg raskrižja: neki sustavi ga ne poništavaju na vrijeme. Opće razloge pogrešaka opisujemo u članku <a href="zasto-senzori-automobila-grijese.html">zašto senzori automobila ponekad griješe</a>.</p>
+<div class="tip"><strong>Savjet:</strong> Prikazanu brzinu shvatite kao podsjetnik, a ne kao zakon. Odgovornost za poštivanje znakova je vaša, a policija neće prihvatiti obrazloženje da vam je auto pokazao krivo ograničenje.</div>
+
+<h2 id="korist">Je li sustav koristan?</h2>
+<p>Unatoč pogreškama, većina vozača s vremenom ga cijeni, osobito na nepoznatim cestama i u naseljima gdje se ograničenja često mijenjaju. Prekoračenje od nekoliko kilometara na sat može koštati novčane kazne, a u zonama nadzora prosječne brzine, poput onih u Sloveniji, i više. O tome pišemo u tekstu <a href="slovenija-kamere-prosjecna-brzina.html">kamere za prosječnu brzinu u Sloveniji</a>.</p>
+
+<h2 id="savjeti">Kako smanjiti pogreške</h2>
+<p>Držite vjetrobransko staklo ispred kamere čistim i bez naljepnica, a karte u navigaciji ažurnima, ako proizvođač nudi ažuriranja. Ako vas zvučno upozorenje ISA sustava smeta, u izborniku često možete odabrati vibraciju ili samo vizualni prikaz. Ne isključujte sustav potpuno ako vam smeta samo zvuk, jer prikaz ograničenja na ploči ostaje korisna informacija.</p>
+
+<p>Kod novijih modela softver kamere može se ažurirati, pa se prepoznavanje s vremenom popravlja. Pitajte servis postoje li nove verzije.</p>
+
+<h2 id="faq">Česta pitanja</h2>
+<div class="faq">
+<details><summary>Može li se prepoznavanje znakova ugraditi u stariji auto?</summary><p>Neki navigacijski uređaji i aplikacije prikazuju ograničenja iz karte, a postoje i naknadne kamere. Tvornički sustav se rijetko može naknadno dodati.</p></details>
+<details><summary>Zašto auto pokazuje ograničenje koje ne vidim?</summary><p>Vjerojatno ga uzima iz karte. Ako je karta stara, vrijednost može biti netočna.</p></details>
+<details><summary>Prepoznaje li sustav znakove u inozemstvu?</summary><p>Uglavnom da, jer su znakovi u Europi slični, ali opća ograničenja bez znakova sustav zna samo iz karte i postavki države.</p></details>
+</div>
+<p><small>Izvori: Uredba (EU) 2019/2144 o općoj sigurnosti vozila i delegirana uredba o ISA sustavima, upute za uporabu vozila više proizvođača.</small></p>
