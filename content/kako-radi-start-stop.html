@@ -1,0 +1,65 @@
+<!--
+publish: 2027-08-11
+title: Kako radi start-stop sustav?
+description: Kako start-stop sustav odlučuje kada ugasiti i ponovno upaliti motor, koje dijelove koristi, zašto treba poseban akumulator i koliko stvarno štedi.
+category: Zanimljivosti
+emoji: 🔁
+readtime: 6
+-->
+<p class="lead">Stanete na semaforu i motor se sam ugasi. Pustite kvačilo ili kočnicu i motor ponovno radi, gotovo neprimjetno. Start-stop danas imaju gotovo svi novi automobili s motorom s unutarnjim izgaranjem, a iza jednostavne ideje krije se prilično složena logika.</p>
+
+<h2 id="ideja">Osnovna ideja</h2>
+<p>Motor u leru troši gorivo i ispušta plinove, a pritom ne obavlja nikakav koristan rad. U gradskoj vožnji auto velik dio vremena stoji na semaforima i u kolonama. Start-stop gasi motor u tim trenucima i pali ga kad vozač želi krenuti. Ušteda ovisi o vožnji, a realno je očekivati manju potrošnju u gustom gradskom prometu, dok je na otvorenoj cesti razlika zanemariva. Koliko se to isplati, analiziramo u tekstu <a href="start-stop-sustav-ustedi.html">koliko start-stop sustav štedi</a>.</p>
+
+<h2 id="uvjeti">Kada sustav gasi motor</h2>
+<p>Upravljačka jedinica motor gasi samo kada su ispunjeni brojni uvjeti. Najvažniji su:</p>
+<ul>
+<li>vozilo stoji ili gotovo stoji, a kod ručnog mjenjača mjenjač je u leru i kvačilo pušteno</li>
+<li>kod automatskog mjenjača vozač drži kočnicu</li>
+<li>motor i katalizator su zagrijani na radnu temperaturu</li>
+<li>akumulator je dovoljno napunjen i u dobrom stanju</li>
+<li>klima i grijanje mogu održati traženu temperaturu u kabini</li>
+<li>vozač ima zakopčan pojas i vrata su zatvorena</li>
+<li>vanjska temperatura nije preniska ni previsoka</li>
+</ul>
+<p>Ako bilo koji uvjet nije ispunjen, motor nastavlja raditi. Zato start-stop ponekad radi, a ponekad ne, što vozači često krivo tumače kao kvar.</p>
+
+<h2 id="dijelovi">Koji dijelovi to omogućuju</h2>
+<p>Start-stop nije samo softver. Proizvođači ugrađuju ojačane dijelove:</p>
+<ul>
+<li><strong>ojačani anlaser</strong> predviđen za višestruko više paljenja, ili remenski starter-generator kod blagih hibrida</li>
+<li><strong>EFB ili AGM akumulator</strong> koji podnosi česta pražnjenja; više u tekstu <a href="efb-akumulator.html">EFB akumulator: što je to</a></li>
+<li><strong>senzor stanja akumulatora</strong> na minus polu, koji neprestano mjeri napon, struju i temperaturu</li>
+<li><strong>senzori položaja</strong> papučice kvačila, mjenjača, kočnice i vrata</li>
+<li>ležajeve i premaze motora otpornije na trošenje pri čestim paljenjima</li>
+</ul>
+
+<h2 id="tablica">Što sustav prati</h2>
+<div class="table-wrap"><table>
+<tr><th>Podatak</th><th>Zašto je važan</th></tr>
+<tr><td>Stanje akumulatora</td><td>Mora biti dovoljno energije za ponovno paljenje</td></tr>
+<tr><td>Temperatura motora</td><td>Hladan motor treba raditi da se zagrije</td></tr>
+<tr><td>Potrošnja klime i grijanja</td><td>Komfor u kabini ima prednost</td></tr>
+<tr><td>Tlak u kočionom servu</td><td>Mora biti dovoljan za sigurno kočenje</td></tr>
+<tr><td>Kut volana i nagib</td><td>Na uzbrdici ili pri manevriranju motor ostaje raditi</td></tr>
+</table></div>
+
+<h2 id="ponovno">Ponovno paljenje</h2>
+<p>Motor se pali kad pritisnete kvačilo, pustite kočnicu ili dodate gas. Upalit će se i bez vaše akcije ako napon akumulatora padne, ako pritisak u kočionom servu oslabi ili ako se kabina previše zagrije ili ohladi. Neki sustavi koriste i položaj klipova kako bi paljenje bilo što brže i mirnije.</p>
+
+<h2 id="trosenje">Troši li start-stop motor i akumulator?</h2>
+<p>Dijelovi su projektirani za takav rad, pa normalno korištenje ne bi trebalo skraćivati vijek motora. Akumulator je drugačija priča: radi teže nego u autu bez start-stopa i mora biti odgovarajućeg tipa. Ugradnja pogrešnog akumulatora ili izostanak registracije nakon zamjene najčešći su razlozi zbog kojih <a href="zasto-start-stop-ne-radi.html">start-stop ne radi</a>. Ako vas zanima smijete li ga trajno ugasiti, pogledajte tekst <a href="treba-li-iskljuciti-start-stop.html">treba li isključiti start-stop</a>.</p>
+<div class="tip"><strong>Savjet:</strong> Ako vas nervira gašenje motora pri manevriranju ili na kratkim zaustavljanjima, kod automatskog mjenjača samo lagano držite kočnicu. Kod mnogih auta motor se tada ne gasi, a jače pritisnuta kočnica ga gasi.</div>
+
+<h2 id="hibridi">Start-stop kod blagih hibrida</h2>
+<p>Kod blagih hibrida s mrežom od 48 V umjesto klasičnog anlasera radi remenski starter-generator. On motor pali gotovo nečujno i bez trzaja, a pri usporavanju vraća dio energije u malu bateriju. Takav sustav može gasiti motor i dok auto još usporava ili se kotrlja, a ne samo kad potpuno stane. Zbog toga je ušteda u gradu nešto veća, a vozač gašenje gotovo i ne primjećuje.</p>
+
+<p>Kod punih hibrida motor se ionako često gasi tijekom vožnje, pa klasična tipka za start-stop kod njih najčešće ni ne postoji.</p>
+
+<h2 id="faq">Česta pitanja</h2>
+<div class="faq">
+<details><summary>Zašto se start-stop svaki put ponovno uključuje?</summary><p>Zbog homologacije potrošnje većina auta pri svakom paljenju vraća start-stop u uključeno stanje.</p></details>
+<details><summary>Štedi li start-stop i kod dizela?</summary><p>Da, princip je isti. Kod dizela je paljenje nešto grublje, ali sustav radi jednako.</p></details>
+<details><summary>Rade li servo-volan i kočnice dok je motor ugašen?</summary><p>Električni servo-volan i kočnice rade, a sustav će upaliti motor ako je potrebno više pomoći.</p></details>
+</div>
+<p><small>Izvori: tehnička dokumentacija proizvođača vozila i dobavljača sustava, servisna praksa.</small></p>

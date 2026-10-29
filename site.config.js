@@ -6,9 +6,9 @@ module.exports = {
   // TODO: stvarna domena, bez kose crte na kraju. Koristi se za canonical, sitemap i Open Graph.
   url: 'https://www.jasamvozac.com.hr',
 
-  // TODO: AdSense ID izdavača, npr. 'ca-pub-1234567890123456'.
+  // AdSense ID izdavača.
   // Dok je prazno, AdSense skripta, ads.txt i oglasni blokovi se ne generiraju.
-  adsenseClient: '',
+  adsenseClient: 'ca-pub-5966688385571427',
   // Neobavezno: ID-ovi oglasnih jedinica iz AdSense sučelja. Ako su prazni, koriste se automatski oglasi.
   adSlots: { inArticle: '', sidebar: '' },
 
