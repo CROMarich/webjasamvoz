@@ -4,7 +4,7 @@ module.exports = {
   tagline: 'Vodiči i vijesti za vozače u Hrvatskoj',
 
   // TODO: stvarna domena, bez kose crte na kraju. Koristi se za canonical, sitemap i Open Graph.
-  url: 'https://www.jasamvozac.hr',
+  url: 'https://www.jasamvozac.com.hr',
 
   // TODO: AdSense ID izdavača, npr. 'ca-pub-1234567890123456'.
   // Dok je prazno, AdSense skripta, ads.txt i oglasni blokovi se ne generiraju.
